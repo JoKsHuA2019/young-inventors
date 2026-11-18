@@ -45,7 +45,7 @@ Inventory matches exact part IDs and quantities. Prepared geometry and compatibi
 
 Notebook, progress, and inventory use one versioned localStorage record. Blocked or full storage falls back to the current tab with export controls. Clearing notes preserves the materials inventory. No account, public upload, analytics, live AI tutor, or server-side learner record is present.
 
-The site is configured for an owner-private Sites deployment. A private hosting login may protect the preview, while the application itself has no learner sign-up. Public publication is not part of this release.
+The site is publicly accessible at https://young-inventors.emma-rong-27.chatgpt.site using the hosted address. Anyone with the link can visit; the application has no learner sign-up. Notebooks and materials inventories remain local to each visitor’s browser.
 
 ## Human review still required
 

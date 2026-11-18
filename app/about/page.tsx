@@ -48,7 +48,7 @@ export default function Page() {
           browser, and a local show-and-tell is a complete invention day.
         </p>
         <p>
-          This is a private curriculum preview. Physical review and child pilots
+          This is a curriculum preview. Physical review and child pilots
           remain pending. The grown-up corner explains the preparation and
           current review records.
         </p>

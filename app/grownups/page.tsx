@@ -19,7 +19,7 @@ export default function Page() {
           All 30 lessons have complete manuscripts and interactive app editions.
           Exact-kit physical trials, Arduino-core compilation and upload, human
           accessibility review, and child pilots remain pending. Use this
-          private preview to prepare and review the curriculum. No physical
+          preview to prepare and review the curriculum. No physical
           lesson has release sign-off.
         </p>
       </div>

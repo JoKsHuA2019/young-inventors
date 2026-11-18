@@ -115,7 +115,7 @@ export function Footer() {
         <Link href="/grownups/">Grown-up guide</Link>
       </nav>
       <p className="fine">
-        A private curriculum preview. Physical activities await exact-kit
+        A curriculum preview. Physical activities await exact-kit
         review.
         <br />
         Your notebook stays in this browser. No account needed.
