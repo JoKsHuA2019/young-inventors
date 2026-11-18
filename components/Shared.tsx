@@ -107,7 +107,7 @@ export function Footer() {
         <Link href="/" className="footer-brand">
           <Leaf size={22} /> A little curiosity goes a long way.
         </Link>
-        <p>Young Inventors · Reverse Engineering Foundation</p>
+        <p>A project by Reverse Engineering Foundation · 2026</p>
       </div>
       <nav aria-label="Footer navigation">
         <Link href="/gallery/">Invention stories</Link>
