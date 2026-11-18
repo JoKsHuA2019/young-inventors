@@ -73,5 +73,25 @@ test("GitHub Pages preserves artwork, routes, downloads, models and notes", asyn
   expect((await request.get((await sketch.getAttribute("href"))!)).ok()).toBe(
     true,
   );
+  await nav.getByRole("link", { name: "My materials", exact: true }).click();
+  await expect(page).toHaveURL(new RegExp(`${prefix}/my-parts/$`));
+  await page.getByRole("button", { name: "Add paper", exact: true }).click();
+  await page.reload();
+  await expect(
+    page.getByRole("spinbutton", { name: "Paper in my box", exact: true }),
+  ).toHaveValue("1");
+  await page.locator(".material-project img").first().scrollIntoViewIfNeeded();
+  await expect
+    .poll(() =>
+      page
+        .locator(".material-project img")
+        .first()
+        .evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
+  await nav.getByRole("link", { name: "My notebook", exact: true }).click();
+  await expect(page.getByLabel("Next time…")).toHaveValue(
+    "Try a different light rhythm.",
+  );
   expect(errors).toEqual([]);
 });

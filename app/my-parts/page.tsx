@@ -4,11 +4,11 @@ export default function Page() {
   return (
     <main id="main" className="page-width inner-page">
       <div className="page-intro">
-        <span className="eyebrow">WHAT’S IN YOUR MAKING BOX?</span>
-        <h1>Small things. So many possibilities.</h1>
+        <span className="eyebrow">A PLACE FOR YOUR SUPPLIES</span>
+        <h1>My making box</h1>
         <p>
-          A piece of cardboard can become a jaw, a handle, or the start of a
-          mystery. Let’s see what your materials might make.
+          Add the things you have, then see what you could make. A few scraps of
+          cardboard are a lovely place to start.
         </p>
       </div>
       <Materials />

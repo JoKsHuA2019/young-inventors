@@ -8,19 +8,21 @@ Checked on 17 November 2026 (America/Los_Angeles). These results concern the web
 | --- | --- |
 | Content validation | Passed: 30 complete editions, unique IDs and routes, acyclic prerequisites, materials, 210 build steps, existing image/diagram/sketch paths, and unchanged pending physical review states. |
 | Content regeneration | Passed: importing the preserved source reproduces `lessons.json` and `catalog.json` byte for byte. |
-| TypeScript and ESLint | Passed without errors or warnings. |
+| TypeScript and ESLint | TypeScript passed in the current production builds. ESLint passed during the initial implementation; it was not rerun for the making-box update. |
 | Production export | Passed; all 45 generated pages are static. |
-| Unit tests | 6 passed: combined filters, quantities/optional materials, progress preservation, damaged storage handling, sensor edge cases, and linkage geometry. |
-| Chromium browser tests | 46 passed, including every lesson's model, helper guide, seven build steps, hint ladder, note persistence, and print view. |
+| GitHub Pages path | Passed against a separate `/young-inventors` export: all 30 project routes, public artwork and fonts, original downloads and code samples, client navigation, interactive model, note reload, making-box counts, and suggested-project images. |
+| Unit tests | 11 passed: combined filters, quantities/optional materials, progress preservation, damaged storage handling, sensor edge cases, linkage geometry, exact material IDs, relevant project suggestions, kit merging, and backup validation. |
+| Chromium browser tests | 56 passed, including every lesson's model, helper guide, seven build steps, hint ladder, note persistence, and print view; header dropdown behavior; and the making box. The GitHub project-path case is skipped for root exports and run separately against its own build. |
+| Making box | Passed: search and group filtering, keyboard counters, persistence after reload, selected kit pieces only, repeated kits without double counting, file download and import into a separate browser context, restore preview/cancel/combine/replace, notebook preservation, invalid-copy rejection, blocked-storage export, and sharing changes between open tabs. |
 | Investigation journey | Passed: prediction → preparation check → physical observation → notebook → export → cancel deletion → confirm deletion. |
 | Failure and update behavior | Passed: unavailable local storage, missing illustrations before hydration, and a changed lesson revision that keeps notes while explaining the restarted setup. |
-| Responsive checks | No horizontal page overflow at 360, 768, and 1440 px; home and lesson screenshots visually inspected. Mobile navigation and model controls work. |
-| Automated accessibility | No axe WCAG A/AA violations found on five representative routes. Keyboard model controls and reduced-motion behavior checked. This is not a complete accessibility audit. |
+| Responsive checks | No horizontal page overflow at 360, 768, and 1440 px; home and lesson screenshots visually inspected. Making-box layouts additionally checked at 900 px and visually inspected at phone and desktop sizes. Mobile navigation and model controls work. |
+| Automated accessibility | No axe WCAG A/AA violations found on five representative routes, the expanded navigation, and the making box at phone/desktop sizes, including its kit checklist and restore preview. Keyboard model and inventory controls and reduced-motion behavior checked. This is not a complete accessibility audit. |
 | Printing | All 30 print views expose the complete reference diagram and review record. C01 was rendered to an A4 PDF; its illustrated worksheet, build diagram, and text extraction were inspected. Closed screen disclosures remain expanded in the printed guide. |
 | Original resources | All original bookshelf links respond successfully. The app labels these downloads as the original edition. |
 | Sketch logic | All 16 original host-mock checks pass using the portable wrapper described below. |
 
-The browser suite is in `tests/browser/workshop.spec.ts`; meaningful domain checks are in `tests/core.test.ts`. Screenshots and test traces are local verification output and are excluded from the source/deployment archive.
+The browser suites are in `tests/browser/`; meaningful domain checks are in `tests/core.test.ts` and `tests/materials.test.ts`. Screenshots and test traces are local verification output and are excluded from the source/deployment archive.
 
 ## Sketch-check scope
 

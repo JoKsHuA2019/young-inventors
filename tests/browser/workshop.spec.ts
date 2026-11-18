@@ -124,12 +124,15 @@ test("filters combine and inventory quantities affect matches", async ({
     page.getByRole("heading", { name: "Let’s try a different combination." }),
   ).toBeVisible();
   await page.goto("/my-parts/");
+  await page.getByText("Have a kit already?", { exact: true }).click();
   await page
-    .getByRole("button", { name: "First circuit", exact: true })
-    .click();
+    .getByLabel("Choose a kit", { exact: true })
+    .selectOption("circuit");
+  await page.getByRole("button", { name: "Add these to my box" }).click();
   await page.reload();
+  await page.getByRole("button", { name: /^In my box/ }).click();
   await expect(
-    page.getByLabel("Quantity: aa_cells", { exact: true }),
+    page.getByRole("spinbutton", { name: "AA alkaline batteries in my box" }),
   ).toHaveValue("2");
   await page.goto("/explore/");
   await page.getByRole("button", { name: "Use my materials" }).click();
