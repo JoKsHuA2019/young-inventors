@@ -1,12 +1,12 @@
 @font-face {
   font-family: DM;
-  src: url("/fonts/DM-Sans.ttf") format("truetype");
+  src: url("../public/fonts/DM-Sans.ttf") format("truetype");
   font-weight: 100 1000;
   font-display: swap;
 }
 @font-face {
   font-family: Lora;
-  src: url("/fonts/Lora.ttf") format("truetype");
+  src: url("../public/fonts/Lora.ttf") format("truetype");
   font-weight: 400 700;
   font-display: swap;
 }
@@ -240,6 +240,8 @@ a:hover h3 {
   transform: none;
 }
 .site-header {
+  position: relative;
+  z-index: 40;
   max-width: 1440px;
   margin: auto;
   height: 98px;
@@ -306,9 +308,63 @@ a:hover h3 {
   border: 1px solid #dedfcd;
   border-radius: 7px;
 }
-.nav .grownup-link {
-  font-size: 11px;
-  color: #67725f;
+.nav-more {
+  position: relative;
+}
+.nav-more-toggle {
+  min-height: 44px;
+  padding: 0 9px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font: inherit;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+}
+.nav-more-toggle:hover,
+.nav-more-toggle[aria-expanded="true"] {
+  background: #eeefe3;
+}
+.nav-more-toggle > svg {
+  transition: transform 0.15s;
+}
+.nav-more-toggle[aria-expanded="true"] > svg {
+  transform: rotate(180deg);
+}
+.nav-more-panel {
+  position: absolute;
+  top: calc(100% + 9px);
+  right: 0;
+  width: 254px;
+  padding: 8px;
+  display: grid;
+  gap: 2px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px #293e3314;
+}
+.nav-more-panel[hidden] {
+  display: none;
+}
+.nav-more-panel a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.nav-more-panel a:hover,
+.nav-more-panel a:focus-visible {
+  background: #eff1e6;
+}
+.nav-more-panel a > svg {
+  color: var(--green);
 }
 .mobile-toggle {
   display: none;
@@ -1885,9 +1941,6 @@ pre {
     gap: 15px;
     font-size: 11px;
   }
-  .nav .grownup-link {
-    display: none;
-  }
   .hero {
     gap: 28px;
     padding: 45px 30px;
@@ -1962,9 +2015,21 @@ pre {
     gap: 4px;
     font-size: 15px;
   }
-  .nav .grownup-link {
-    display: flex;
-    font-size: 14px;
+  .nav-more-toggle {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+  .nav-more-toggle:hover,
+  .nav-more-toggle[aria-expanded="true"] {
+    background: transparent;
+  }
+  .nav-more-panel {
+    position: static;
+    width: 100%;
+    margin: 4px 0 6px;
+    box-shadow: none;
+    background: #f5f3e8;
   }
   .nav .notebook-link {
     background: none;

@@ -43,7 +43,7 @@ export default function Home() {
         </div>
         <div className="hero-visual">
           <img
-            src="/art/workshop-hero.webp"
+            src={assetPath("art/workshop-hero.webp")}
             alt="Fox, Mouse, Rabbit, and Squirrel gather around a handmade tent lamp and a cardboard jaw in their sunny woodland workshop."
             fetchPriority="high"
           />
@@ -93,7 +93,7 @@ export default function Home() {
         <section className="workshop-invitation">
           <div className="friends-image">
             <img
-              src="/art/workshop-friends.webp"
+              src={assetPath("art/workshop-friends.webp")}
               alt="Our four workshop friends: Fox, Mouse, Rabbit, and Squirrel."
               loading="lazy"
             />
@@ -162,3 +162,4 @@ export default function Home() {
     </main>
   );
 }
+import { assetPath } from "@/lib/assets";

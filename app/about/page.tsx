@@ -18,7 +18,7 @@ export default function Page() {
       </div>
       <img
         className="about-art"
-        src="/art/workshop-hero.webp"
+        src={assetPath("art/workshop-hero.webp")}
         alt="The woodland friends investigate handmade inventions together."
       />
       <div className="editorial-content">
@@ -48,9 +48,9 @@ export default function Page() {
           browser, and a local show-and-tell is a complete invention day.
         </p>
         <p>
-          This is a curriculum preview. Physical review and child pilots
-          remain pending. The grown-up corner explains the preparation and
-          current review records.
+          This is a curriculum preview. Physical review and child pilots remain
+          pending. The grown-up corner explains the preparation and current
+          review records.
         </p>
         <div className="button-row">
           <Link className="button" href="/explore/">
@@ -64,3 +64,4 @@ export default function Page() {
     </main>
   );
 }
+import { assetPath } from "@/lib/assets";

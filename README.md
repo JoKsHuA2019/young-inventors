@@ -47,6 +47,23 @@ Notebook, progress, and inventory use one versioned localStorage record. Blocked
 
 The site is publicly accessible at https://young-inventors.emma-rong-27.chatgpt.site using the hosted address. Anyone with the link can visit; the application has no learner sign-up. Notebooks and materials inventories remain local to each visitor’s browser.
 
+## GitHub Pages
+
+The public source repository is https://github.com/JoKsHuA2019/young-inventors. `.github/workflows/pages.yml` builds and publishes the `main` branch to https://jokshua2019.github.io/young-inventors/ using GitHub Actions. It runs the unit tests and content validation before publishing.
+
+After saving source for Sites, push the same `main` commit to the `github` remote to update the Pages copy.
+
+GitHub Pages uses a project path, so its build sets `NEXT_PUBLIC_BASE_PATH=/young-inventors`. Next.js applies this prefix to navigation and bundles; `lib/assets.ts` applies it to public illustrations and downloads. Fonts are bundled from the same local files. Sites builds leave this variable unset and keep their root-level routes.
+
+To check the GitHub Pages export locally:
+
+```sh
+NEXT_PUBLIC_BASE_PATH=/young-inventors npm run build
+NEXT_PUBLIC_BASE_PATH=/young-inventors npx playwright test tests/browser/subpath.spec.ts
+```
+
+Rebuild without that variable before packaging for Sites. A browser keeps separate notebooks and inventories for the two website addresses; neither host stores a learner account or synchronizes browser data.
+
 ## Human review still required
 
 All exact-kit bench tests, Arduino-core compilation, board upload, mechanism clearance checks, human accessibility review, child usability pilots, and release signatures remain pending. The original host-mock checks and software tests do not establish physical readiness. The app displays these review states and includes the original review template.

@@ -19,8 +19,8 @@ export default function Page() {
           All 30 lessons have complete manuscripts and interactive app editions.
           Exact-kit physical trials, Arduino-core compilation and upload, human
           accessibility review, and child pilots remain pending. Use this
-          preview to prepare and review the curriculum. No physical
-          lesson has release sign-off.
+          preview to prepare and review the curriculum. No physical lesson has
+          release sign-off.
         </p>
       </div>
       <div className="resource-grid">
@@ -32,10 +32,10 @@ export default function Page() {
             needed.
           </p>
           <Link href="/explore/">Choose a project →</Link>
-          <a href="/originals/Young_Inventors_Helper_Guide.pdf">
+          <a href={assetPath("originals/Young_Inventors_Helper_Guide.pdf")}>
             Original technical helper guide (PDF)
           </a>
-          <a href="/resources/REVIEW_TEMPLATE.md" download>
+          <a href={assetPath("resources/REVIEW_TEMPLATE.md")} download>
             Download the physical review template
           </a>
         </article>
@@ -46,13 +46,13 @@ export default function Page() {
             redesign, and tidy up. A shorter session can stop at a useful
             question.
           </p>
-          <a href="/resources/FACILITATION.md" download>
+          <a href={assetPath("resources/FACILITATION.md")} download>
             Workshop schedule and support
           </a>
-          <a href="/resources/RUBRIC_AND_PILOT.md" download>
+          <a href={assetPath("resources/RUBRIC_AND_PILOT.md")} download>
             Private learning rubric and pilot guide
           </a>
-          <a href="/resources/REPLACEMENT_RULES.md" download>
+          <a href={assetPath("resources/REPLACEMENT_RULES.md")} download>
             Material and substitution rules
           </a>
         </article>
@@ -152,20 +152,26 @@ export default function Page() {
               <span className="eyebrow">ORIGINAL EDITION · 38 PAGES</span>
               <h3>{t.original}</h3>
               <a
-                href={`/originals/${i + 1}_${t.id === "the-inventor-league" ? "inventor-league" : t.id === "inventor-league" ? "inventor-league" : t.id}.pdf`}
+                href={assetPath(
+                  `originals/${i + 1}_${t.id === "the-inventor-league" ? "inventor-league" : t.id === "inventor-league" ? "inventor-league" : t.id}.pdf`,
+                )}
               >
                 Read original PDF
               </a>
-              <a href={`/originals/${i + 1}_${t.id}.pptx`} download>
+              <a href={assetPath(`originals/${i + 1}_${t.id}.pptx`)} download>
                 Download editable PowerPoint
               </a>
             </article>
           ))}
         </div>
-        <a className="text-link" href="/originals/Young_Inventors_App_Copy.pdf">
+        <a
+          className="text-link"
+          href={assetPath("originals/Young_Inventors_App_Copy.pdf")}
+        >
           All original child pages in one PDF →
         </a>
       </section>
     </main>
   );
 }
+import { assetPath } from "@/lib/assets";

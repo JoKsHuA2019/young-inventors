@@ -12,7 +12,7 @@ export default defineConfig({
   },
   webServer: {
     command: "npm run preview",
-    url: "http://127.0.0.1:4173",
+    url: `http://127.0.0.1:4173${process.env.NEXT_PUBLIC_BASE_PATH || ""}/`,
     reuseExistingServer: true,
     timeout: 15000,
   },

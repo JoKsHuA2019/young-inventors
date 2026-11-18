@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   ArrowUpRight,
   Clock,
@@ -11,10 +11,12 @@ import {
   BookOpen,
   Scissors,
   Lightbulb,
+  ChevronDown,
 } from "lucide-react";
 import type { CatalogLesson, ImageRef } from "@/lib/types";
 import { trackFor, projectHref } from "@/lib/catalog";
 import { useWorkshop } from "./WorkshopProvider";
+import { assetPath } from "@/lib/assets";
 export function StoryImage({
   image,
   alt,
@@ -37,7 +39,7 @@ export function StoryImage({
             // A cached failure can happen before React attaches onError.
             if (node?.complete && node.naturalWidth === 0) setFailed(true);
           }}
-          src={`/${image.path}`}
+          src={assetPath(image.path)}
           alt={alt}
           loading="lazy"
           onError={() => setFailed(true)}
@@ -56,13 +58,56 @@ export function StoryImage({
 export function Nav() {
   const { ready } = useWorkshop();
   const [open, setOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const header = useRef<HTMLElement>(null);
+  const more = useRef<HTMLDivElement>(null);
+  const moreButton = useRef<HTMLButtonElement>(null);
+  const mobileButton = useRef<HTMLButtonElement>(null);
+  const closeNavigation = () => {
+    setOpen(false);
+    setMoreOpen(false);
+  };
+  useEffect(() => {
+    if (!open && !moreOpen) return;
+    const dismissOutside = (event: PointerEvent) => {
+      if (!(event.target instanceof Node)) return;
+      if (!more.current?.contains(event.target)) setMoreOpen(false);
+      if (!header.current?.contains(event.target)) setOpen(false);
+    };
+    document.addEventListener("pointerdown", dismissOutside);
+    return () => document.removeEventListener("pointerdown", dismissOutside);
+  }, [open, moreOpen]);
   return (
     <>
       <a className="skip-link" href="#main">
         Skip to the workshop
       </a>
-      <header className="site-header">
-        <Link href="/" className="brand" aria-label="Young Inventors home">
+      <header
+        className="site-header"
+        ref={header}
+        onBlur={(event) => {
+          if (!event.currentTarget.contains(event.relatedTarget))
+            closeNavigation();
+        }}
+        onKeyDown={(event) => {
+          if (event.key !== "Escape") return;
+          if (moreOpen) {
+            setMoreOpen(false);
+            moreButton.current?.focus();
+          } else if (open) {
+            setOpen(false);
+            mobileButton.current?.focus();
+          } else return;
+          event.preventDefault();
+          event.stopPropagation();
+        }}
+      >
+        <Link
+          href="/"
+          className="brand"
+          aria-label="Young Inventors home"
+          onClick={closeNavigation}
+        >
           <span className="brand-mark">
             <Lightbulb size={25} />
             <Leaf size={12} />
@@ -74,17 +119,26 @@ export function Nav() {
         </Link>
         <button
           className="mobile-toggle"
+          ref={mobileButton}
           disabled={!ready}
           aria-label={open ? "Close navigation" : "Open navigation"}
           aria-expanded={open}
-          onClick={() => setOpen(!open)}
+          aria-controls="main-navigation"
+          onClick={() => {
+            setOpen(!open);
+            setMoreOpen(false);
+          }}
         >
           {open ? <X /> : <Menu />}
         </button>
         <nav
+          id="main-navigation"
           aria-label="Main navigation"
           className={open ? "nav open" : "nav"}
-          onClick={() => setOpen(false)}
+          onClick={(event) => {
+            if (event.target instanceof Element && event.target.closest("a"))
+              closeNavigation();
+          }}
         >
           <Link href="/explore/">Things to make</Link>
           <Link href="/trails/">Project trails</Link>
@@ -92,9 +146,41 @@ export function Nav() {
           <Link href="/notebook/" className="notebook-link">
             <BookOpen size={18} /> My notebook
           </Link>
-          <Link className="grownup-link" href="/grownups/">
-            For grown-ups <ArrowUpRight size={14} />
-          </Link>
+          <div
+            className="nav-more"
+            ref={more}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget))
+                setMoreOpen(false);
+            }}
+          >
+            <button
+              className="nav-more-toggle"
+              ref={moreButton}
+              type="button"
+              disabled={!ready}
+              aria-expanded={moreOpen}
+              aria-controls="more-navigation"
+              onClick={() => setMoreOpen(!moreOpen)}
+            >
+              More <ChevronDown size={15} aria-hidden="true" />
+            </button>
+            <div
+              id="more-navigation"
+              className="nav-more-panel"
+              hidden={!moreOpen}
+            >
+              <Link href="/gallery/">
+                <BookOpen size={17} aria-hidden="true" /> Invention stories
+              </Link>
+              <Link href="/about/">
+                <Leaf size={17} aria-hidden="true" /> About the workshop
+              </Link>
+              <Link href="/grownups/">
+                <Lightbulb size={17} aria-hidden="true" /> Grown-up guide
+              </Link>
+            </div>
+          </div>
         </nav>
       </header>
     </>
@@ -115,8 +201,7 @@ export function Footer() {
         <Link href="/grownups/">Grown-up guide</Link>
       </nav>
       <p className="fine">
-        A curriculum preview. Physical activities await exact-kit
-        review.
+        A curriculum preview. Physical activities await exact-kit review.
         <br />
         Your notebook stays in this browser. No account needed.
       </p>

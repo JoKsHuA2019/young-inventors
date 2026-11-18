@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { Lesson } from "@/lib/types";
 import { projectHref, byId } from "@/lib/catalog";
 import Link from "next/link";
+import { assetPath } from "@/lib/assets";
 import { Check, Copy, Download } from "lucide-react";
 export default function HelperGuide({
   lesson,
@@ -109,7 +110,7 @@ export default function HelperGuide({
         <summary>View the original reference diagram</summary>
         <img
           loading={printMode ? "eager" : "lazy"}
-          src={`/assets/${lesson.id}-connection-map.png`}
+          src={assetPath(`assets/${lesson.id}-connection-map.png`)}
           alt={`${lesson.title}: original reference map. Use the complete connection table above for every endpoint.`}
         />
       </details>
@@ -124,7 +125,7 @@ export default function HelperGuide({
                 <summary>Reference for step {a.number}</summary>
                 <img
                   loading={printMode ? "eager" : "lazy"}
-                  src={`/${a.diagram}`}
+                  src={assetPath(a.diagram)}
                   alt={`${lesson.id.toUpperCase()} step ${a.number}: ${a.title}. ${a.instruction}`}
                 />
               </details>
@@ -140,7 +141,11 @@ export default function HelperGuide({
             Host-mock logic checks are separate from actual board compilation
             and physical review.
           </p>
-          <a className="button secondary" download href={`/${h.code_path}`}>
+          <a
+            className="button secondary"
+            download
+            href={assetPath(h.code_path)}
+          >
             <Download size={17} /> Download sketch
           </a>
           {code && (

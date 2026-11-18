@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 const root = path.resolve("out");
 const port = Number(process.env.PORT || 4173);
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const types = {
   ".html": "text/html; charset=utf-8",
   ".txt": "text/plain; charset=utf-8",
@@ -21,9 +22,22 @@ const types = {
 http
   .createServer((req, res) => {
     try {
-      const name = decodeURIComponent(
+      let name = decodeURIComponent(
         new URL(req.url, "http://localhost").pathname,
       );
+      if (basePath) {
+        if (name === basePath) {
+          res.writeHead(301, { Location: `${basePath}/` });
+          res.end();
+          return;
+        }
+        if (!name.startsWith(`${basePath}/`)) {
+          res.writeHead(404);
+          res.end("Not found");
+          return;
+        }
+        name = name.slice(basePath.length);
+      }
       let file = path.resolve(root, "." + name);
       if (file !== root && !file.startsWith(root + path.sep)) {
         res.writeHead(403);
@@ -50,5 +64,7 @@ http
     }
   })
   .listen(port, "127.0.0.1", () =>
-    console.log(`Young Inventors preview: http://127.0.0.1:${port}`),
+    console.log(
+      `Young Inventors preview: http://127.0.0.1:${port}${basePath}/`,
+    ),
   );
