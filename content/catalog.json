@@ -1,0 +1,2271 @@
+[
+  {
+    "id": "c01",
+    "title": "A light for the little tent",
+    "character": "Mouse",
+    "slug": "c01-the-light-that-wouldn-t-turn-on",
+    "track": "circuit-detectives",
+    "minutes": 30,
+    "prerequisites": [],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 0,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse has tucked a blanket inside the tent. There’s a pillow, too, and a tiny place for muddy boots. But when the sun goes down, it gets awfully dark in there. Could you help make a little lamp?",
+    "preview": "circuit"
+  },
+  {
+    "id": "c02",
+    "title": "The fox’s secret flap",
+    "character": "Fox",
+    "slug": "c02-the-secret-switch",
+    "track": "circuit-detectives",
+    "minutes": 35,
+    "prerequisites": [
+      "c01"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 1,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "foil_contacts",
+        "quantity": 2,
+        "label": "small foil contacts",
+        "compatibility": "Smooth edges; series return only.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox has made a cardboard flap with something shiny underneath. Close it, and a little light comes on. Open it, and the light disappears. There’s no magic hiding in the cardboard. Let’s find the part that makes the difference.",
+    "preview": "flap"
+  },
+  {
+    "id": "c03",
+    "title": "The squirrel’s material mystery",
+    "character": "Squirrel",
+    "slug": "c03-the-material-mystery",
+    "track": "circuit-detectives",
+    "minutes": 35,
+    "prerequisites": [
+      "c01"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 2,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "dry_samples",
+        "quantity": 4,
+        "label": "approved dry samples: foil, paperclip, wood and plastic",
+        "compatibility": "No skin, liquids, sharp scraps or unknown materials.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Squirrel has brought a paperclip, a plastic lid, and a very serious expression. One of these might help a light shine. Another might leave it dark. Looking at the objects won’t tell us everything, so we’ll make a little tester and collect some clues.",
+    "preview": "materials"
+  },
+  {
+    "id": "c04",
+    "title": "Turn the little light around",
+    "character": "Rabbit",
+    "slug": "c04-the-one-way-light",
+    "track": "circuit-detectives",
+    "minutes": 25,
+    "prerequisites": [
+      "c01"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 3,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit has put the same tiny light into the same circuit twice. One way it shines. The other way it doesn’t. The battery hasn’t changed, and the resistor is still there. Could the light’s two legs be trying to tell us something?",
+    "preview": "polarity"
+  },
+  {
+    "id": "c05",
+    "title": "Two bright windows",
+    "character": "Mouse",
+    "slug": "c05-two-lights-one-surprise",
+    "track": "circuit-detectives",
+    "minutes": 40,
+    "prerequisites": [
+      "c01"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 4,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 2,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 2,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 8,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse’s little house has two windows: one by the kitchen and one beside a stack of books. We’d like a light in each. But what if a wire comes loose in the kitchen? Let’s build two paths and see whether the reading light needs to go out too.",
+    "preview": "parallel"
+  },
+  {
+    "id": "c06",
+    "title": "A picture with a little glow",
+    "character": "Fox",
+    "slug": "c06-light-up-message-studio",
+    "track": "circuit-detectives",
+    "minutes": 45,
+    "prerequisites": [
+      "c01",
+      "c02",
+      "c04"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/c-story-sheet.jpg",
+      "cell": 5,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult fits matched cells; not coin cells or lithium cells.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA 3 V holder with insulated leads",
+        "compatibility": "Use only this isolated battery source.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult identifies anode/cathode; cut legs need a verified mark.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Always in series; orientation does not matter.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult identifies connected strips; split rails are not assumed connected.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Enough to complete the loop without bare loose joins.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox has drawn a woodland scene, but one detail is missing. Perhaps a cabin needs a window, or a star wants to peek through the trees. You can choose where the light belongs. Then we’ll find out how to keep the circuit working inside a picture.",
+    "preview": "picture"
+  },
+  {
+    "id": "p01",
+    "title": "A firefly’s blinking message",
+    "character": "Squirrel",
+    "slug": "p01-make-a-tiny-computer-blink",
+    "track": "code-your-world",
+    "minutes": 30,
+    "prerequisites": [],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 0,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "A tiny light on the board is blinking steadily. Squirrel wonders whether it could blink a little faster, like a firefly in a hurry. The board follows instructions, including how long to wait. Let’s change those waits and see what the light does.",
+    "preview": "blink"
+  },
+  {
+    "id": "p02",
+    "title": "A crossing for the tiny town",
+    "character": "Rabbit",
+    "slug": "p02-build-a-mini-traffic-light",
+    "track": "code-your-world",
+    "minutes": 40,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 1,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "red LED",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "yellow_led",
+        "quantity": 1,
+        "label": "yellow LED",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "green_led",
+        "quantity": 1,
+        "label": "green LED",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 3,
+        "label": "220 ohm resistors",
+        "compatibility": "One per LED branch.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit’s paper town has a crossing, three lights, and a queue of imaginary bicycles. The lights can take turns, but how long should each turn last? Let’s keep the order and change just one wait to find out what happens to the whole pattern.",
+    "preview": "traffic"
+  },
+  {
+    "id": "p03",
+    "title": "The button at the workshop door",
+    "character": "Fox",
+    "slug": "p03-button-powered-magic",
+    "track": "code-your-world",
+    "minutes": 40,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 2,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Not Uno R4, ESP32 or micro:bit wiring.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult installs IDE/board support and selects port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "button",
+        "quantity": 1,
+        "label": "normally-open momentary pushbutton",
+        "compatibility": "Adult identifies two contacts that connect only when pressed.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Identify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "In series with LED.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 6,
+        "label": "insulated compatible jumpers",
+        "compatibility": "No external battery or servo supply.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox wants visitors to press a button when they arrive. A little light will let the workshop know someone is outside. The strange part is that the board calls a press LOW. How could a LOW reading make a light turn on?",
+    "preview": "button"
+  },
+  {
+    "id": "p04",
+    "title": "A softer lighthouse glow",
+    "character": "Mouse",
+    "slug": "p04-control-the-glow",
+    "track": "code-your-world",
+    "minutes": 35,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 3,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Verify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 ohm resistor, 1/4 W",
+        "compatibility": "Always in series with this LED.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse’s paper lighthouse has one lamp, but it doesn’t always need the same glow. Could we make it look softer without changing the light itself? The board can switch it on and off much faster than our eyes can follow.",
+    "preview": "pwm"
+  },
+  {
+    "id": "p05",
+    "title": "A secret signal at camp",
+    "character": "Rabbit",
+    "slug": "p05-invent-a-secret-signal",
+    "track": "code-your-world",
+    "minutes": 40,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 4,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "passive_piezo",
+        "quantity": 1,
+        "label": "optional reviewed low-current passive piezo",
+        "compatibility": "Not an active buzzer or siren. Silent mode needs no external circuit.",
+        "reusable": true,
+        "optional": true
+      }
+    ],
+    "intro": "Two short flashes shine across the pretend campsite. Then comes one long flash. Rabbit thinks it might mean ‘tea is ready,’ but Fox thinks it means ‘bring a blanket.’ Before we can send a useful message, we need a pattern someone else can recognize.",
+    "preview": "signal"
+  },
+  {
+    "id": "p06",
+    "title": "Wait for the firefly",
+    "character": "Squirrel",
+    "slug": "p06-beat-the-reaction-machine",
+    "track": "code-your-world",
+    "minutes": 50,
+    "prerequisites": [
+      "p03",
+      "p04"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/p-story-sheet.jpg",
+      "cell": 5,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Verify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 ohm resistor, 1/4 W",
+        "compatibility": "Always in series with this LED.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "button",
+        "quantity": 1,
+        "label": "normally-open momentary button",
+        "compatibility": "Use verified switched contacts, not two permanently joined legs.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Squirrel’s finger is ready, but the little light is taking its time. Pressing early would be easy. Waiting for the actual signal is the interesting part. Let’s investigate how a game can tell a quick reaction from a guess.",
+    "preview": "reaction"
+  },
+  {
+    "id": "m01",
+    "title": "The fox’s cardboard jaw",
+    "character": "Fox",
+    "slug": "m01-the-cardboard-superpower",
+    "track": "machines-in-motion",
+    "minutes": 35,
+    "prerequisites": [],
+    "board": "none",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 0,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 1,
+        "label": "precut stiff cardboard lever, about 24 × 3 cm",
+        "compatibility": "Adult rounds corners and prepares pivot holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "base",
+        "quantity": 1,
+        "label": "cardboard base, about 30 × 15 cm",
+        "compatibility": "Stable, taped flat.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "pivot",
+        "quantity": 1,
+        "label": "blunt paper fastener with two cardboard support tabs",
+        "compatibility": "Adult installs and covers rear tabs; moving arm clears base.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper_load",
+        "quantity": 1,
+        "label": "light paper load",
+        "compatibility": "Same load for each trial; no heavy objects.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Use a small piece to keep load in place.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ruler",
+        "quantity": 1,
+        "label": "ruler with cm marks",
+        "compatibility": "Read distances from pivot, not from end.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox has made a cardboard creature with a very long tail and a rather impressive jaw. Push the tail down and the jaw rises. But does it matter where you push? Let’s look under the decoration and find the simple machine doing the work.",
+    "preview": "lever"
+  },
+  {
+    "id": "m02",
+    "title": "The squirrel’s drawing machine",
+    "character": "Squirrel",
+    "slug": "m02-a-linkage-that-draws",
+    "track": "machines-in-motion",
+    "minutes": 40,
+    "prerequisites": [
+      "m01"
+    ],
+    "board": "none",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 1,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "fasteners",
+        "quantity": 4,
+        "label": "covered blunt paper fasteners",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "base",
+        "quantity": 1,
+        "label": "base with fixed pivots 10 cm apart",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "link_set",
+        "quantity": 1,
+        "label": "4/10/8 cm precut crank/coupler/rocker",
+        "compatibility": "Adult prepunctures endpoint holes and alternate coupler hole 1 cm inward.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Squirrel turns a cardboard handle and a marker wanders across the paper. The marker has no motor. A few connected strips are guiding its movement. What do you think would happen if we changed one place where those strips join?",
+    "preview": "linkage"
+  },
+  {
+    "id": "m03",
+    "title": "A leaf that waves hello",
+    "character": "Rabbit",
+    "slug": "m03-teach-a-servo-to-wave",
+    "track": "machines-in-motion",
+    "minutes": 45,
+    "prerequisites": [
+      "p01",
+      "m01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 2,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_5v",
+        "quantity": 1,
+        "label": "reviewed low-force 5 V micro-servo",
+        "compatibility": "Adult verifies pinout, safe range, guarded motion and light load.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_supply",
+        "quantity": 1,
+        "label": "adult-prepared regulated 5 V servo source",
+        "compatibility": "Adequate current, protected connector, shared GND. Positive stays separate from Uno 5 V.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper_arm",
+        "quantity": 1,
+        "label": "very light paper arm and stable mount",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit has cut out a paper leaf for the workshop window. It would be lovely if it could wave at visitors. A little motor called a servo can try to move to a requested position. Let’s see what two carefully chosen positions can do.",
+    "preview": "servo"
+  },
+  {
+    "id": "m04",
+    "title": "A dial for the puppet",
+    "character": "Fox",
+    "slug": "m04-build-your-own-control-dial",
+    "track": "machines-in-motion",
+    "minutes": 45,
+    "prerequisites": [
+      "m03"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 3,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_5v",
+        "quantity": 1,
+        "label": "reviewed low-force 5 V micro-servo",
+        "compatibility": "Adult verifies pinout, safe range, guarded motion and light load.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_supply",
+        "quantity": 1,
+        "label": "adult-prepared regulated 5 V servo source",
+        "compatibility": "Adequate current, protected connector, shared GND. Positive stays separate from Uno 5 V.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper_arm",
+        "quantity": 1,
+        "label": "very light paper arm and stable mount",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "pot_10k",
+        "quantity": 1,
+        "label": "three-terminal 10 kohm potentiometer",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox’s paper puppet needs a way to point at things. A button offers a choice, but a dial can offer many positions in between. Turn a little here and watch a little movement there. How does the board connect the two?",
+    "preview": "dial"
+  },
+  {
+    "id": "m05",
+    "title": "A bridge for a paper boat",
+    "character": "Mouse",
+    "slug": "m05-the-tiny-drawbridge",
+    "track": "machines-in-motion",
+    "minutes": 50,
+    "prerequisites": [
+      "m03",
+      "p03"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 4,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_5v",
+        "quantity": 1,
+        "label": "reviewed low-force 5 V micro-servo",
+        "compatibility": "Adult verifies pinout, safe range, guarded motion and light load.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_supply",
+        "quantity": 1,
+        "label": "adult-prepared regulated 5 V servo source",
+        "compatibility": "Adequate current, protected connector, shared GND. Positive stays separate from Uno 5 V.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper_arm",
+        "quantity": 1,
+        "label": "very light paper arm and stable mount",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "button",
+        "quantity": 1,
+        "label": "normally-open momentary button",
+        "compatibility": "Use verified switched contacts, not two permanently joined legs.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "bridge",
+        "quantity": 1,
+        "label": "precut light cardboard bridge/hinge/linkage",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse’s paper boat is approaching the bridge, and its mast is a little too tall. The bridge needs to lift. Could a button ask a servo to move it while everyone keeps their hands clear of the hinge?",
+    "preview": "bridge"
+  },
+  {
+    "id": "m06",
+    "title": "A creature with a wiggle",
+    "character": "Squirrel",
+    "slug": "m06-cardboard-creature-theater",
+    "track": "machines-in-motion",
+    "minutes": 55,
+    "prerequisites": [
+      "m03"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/m-story-sheet.jpg",
+      "cell": 5,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_5v",
+        "quantity": 1,
+        "label": "reviewed low-force 5 V micro-servo",
+        "compatibility": "Adult verifies pinout, safe range, guarded motion and light load.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "servo_supply",
+        "quantity": 1,
+        "label": "adult-prepared regulated 5 V servo source",
+        "compatibility": "Adequate current, protected connector, shared GND. Positive stays separate from Uno 5 V.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper_arm",
+        "quantity": 1,
+        "label": "very light paper arm and stable mount",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 1,
+        "label": "light paper creature decoration",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "This paper creature has something to say, but it has no words. Perhaps a slow turn means it is curious. Perhaps a quick greeting means it has spotted a friend. Squirrel wants to find out how much expression can come from the timing of a simple movement.",
+    "preview": "creature"
+  },
+  {
+    "id": "s01",
+    "title": "A cloud over the robot eye",
+    "character": "Rabbit",
+    "slug": "s01-the-robot-eye",
+    "track": "sensor-sleuths",
+    "minutes": 40,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 0,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use selected 5 V reference only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "USB data cable",
+        "compatibility": "IDE/board support prepared by adult.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ldr",
+        "quantity": 1,
+        "label": "two-lead photoresistor (LDR)",
+        "compatibility": "Not a three-pin sensor module.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_10k",
+        "quantity": 1,
+        "label": "fixed 10 kΩ resistor, ¼ W",
+        "compatibility": "Not the 220 Ω LED resistor.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 5,
+        "label": "insulated compatible jumper leads",
+        "compatibility": "Use a known continuous junction for A0.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "shade",
+        "quantity": 1,
+        "label": "opaque dry card",
+        "compatibility": "Shades without pulling wires.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit slides a paper cloud across a tiny sensor. Nothing touches the sensor, but the numbers on the screen begin to change. Could this circuit help an invention notice a shadow? Let’s collect some readings before deciding what the numbers mean.",
+    "preview": "shade"
+  },
+  {
+    "id": "s02",
+    "title": "A lamp for the reading nook",
+    "character": "Mouse",
+    "slug": "s02-build-a-clever-night-light",
+    "track": "sensor-sleuths",
+    "minutes": 45,
+    "prerequisites": [
+      "s01",
+      "p03"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 1,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ldr",
+        "quantity": 1,
+        "label": "two-lead photoresistor",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_10k",
+        "quantity": 1,
+        "label": "fixed 10 kohm resistor",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Verify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 ohm resistor, 1/4 W",
+        "compatibility": "Always in series with this LED.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse is halfway through a book when the reading nook starts getting dark. A light sensor can notice a change, but somebody still has to decide what ‘dark enough’ means. Let’s use actual readings to choose a rule for the lamp.",
+    "preview": "threshold"
+  },
+  {
+    "id": "s03",
+    "title": "An echo by the cardboard wall",
+    "character": "Fox",
+    "slug": "s03-the-invisible-tape-measure",
+    "track": "sensor-sleuths",
+    "minutes": 45,
+    "prerequisites": [
+      "p01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 2,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "hc_sr04",
+        "quantity": 1,
+        "label": "reviewed 5 V HC-SR04 module",
+        "compatibility": "ECHO direct to D7 only on selected 5 V Uno R3.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "target",
+        "quantity": 1,
+        "label": "flat cardboard target",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ruler",
+        "quantity": 1,
+        "label": "centimeter ruler",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox holds up a cardboard wall in front of a sensor with two round openings. The sensor sends out sound and listens for its return. Could the length of that journey tell us how far away the wall is?",
+    "preview": "distance"
+  },
+  {
+    "id": "s04",
+    "title": "A clue for the little cart",
+    "character": "Squirrel",
+    "slug": "s04-the-friendly-parking-assistant",
+    "track": "sensor-sleuths",
+    "minutes": 50,
+    "prerequisites": [
+      "s03",
+      "p04"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 3,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "hc_sr04",
+        "quantity": 1,
+        "label": "reviewed 5 V HC-SR04 module",
+        "compatibility": "ECHO direct to D7 only on selected 5 V Uno R3.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "target",
+        "quantity": 1,
+        "label": "flat cardboard target",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ruler",
+        "quantity": 1,
+        "label": "centimeter ruler",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Verify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 ohm resistor, 1/4 W",
+        "compatibility": "Always in series with this LED.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Squirrel’s tabletop cart is edging toward a cardboard wall. A flashing light could give us a clue about the distance. But what should happen when the sensor cannot find the wall at all? A useful invention needs a way to admit when it doesn’t know.",
+    "preview": "parking"
+  },
+  {
+    "id": "s05",
+    "title": "The warm little bead",
+    "character": "Rabbit",
+    "slug": "s05-a-thermometer-without-numbers",
+    "track": "sensor-sleuths",
+    "minutes": 45,
+    "prerequisites": [
+      "s01"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 4,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ntc_10k",
+        "quantity": 1,
+        "label": "insulated 10 kohm NTC bead",
+        "compatibility": "Adult checks insulation. Touch dry insulated bead only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_10k",
+        "quantity": 1,
+        "label": "fixed 10 kohm resistor",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit has found a tiny sensor shaped like a bead. Your helper has checked and insulated it so that only its dry covering can be touched. Could gentle warmth from a hand change its reading? We’ll need patience, because a small change can be difficult to spot.",
+    "preview": "temperature"
+  },
+  {
+    "id": "s06",
+    "title": "The treasure box’s light clue",
+    "character": "Mouse",
+    "slug": "s06-the-mystery-box-guardian",
+    "track": "sensor-sleuths",
+    "minutes": 55,
+    "prerequisites": [
+      "s02"
+    ],
+    "board": "uno_r3_5v",
+    "image": {
+      "path": "assets/s-story-sheet.jpg",
+      "cell": 5,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "uno_r3",
+        "quantity": 1,
+        "label": "Arduino Uno R3, 5 V logic",
+        "compatibility": "Use this exact board variant only.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "usb_data",
+        "quantity": 1,
+        "label": "compatible USB data cable",
+        "compatibility": "Adult prepares IDE/core/port.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Adult maps actual connected strips.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 10,
+        "label": "insulated compatible jumpers",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "ldr",
+        "quantity": 1,
+        "label": "two-lead photoresistor",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_10k",
+        "quantity": 1,
+        "label": "fixed 10 kohm resistor",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Verify anode/cathode.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 ohm resistor, 1/4 W",
+        "compatibility": "Always in series with this LED.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "box",
+        "quantity": 1,
+        "label": "dry cardboard box",
+        "compatibility": "Adult prepares smooth wire gap.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse wants to know when the treasure box opens. Light slips inside as the lid rises, and a sensor might notice. But would that clue work in a dark room? Let’s find out what the invention really detects.",
+    "preview": "box"
+  },
+  {
+    "id": "i01",
+    "title": "What’s inside the mystery box?",
+    "character": "Fox",
+    "slug": "i01-the-mystery-machine",
+    "track": "inventor-league",
+    "minutes": 40,
+    "prerequisites": [],
+    "board": "none",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 0,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "mystery_model",
+        "quantity": 1,
+        "label": "adult-prepared closed cardboard lever/elastic-return model",
+        "compatibility": "Contained low-force mechanism. Exterior inspection only until adult reveal.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox has brought a cardboard box with a little tab sticking out. Push the tab gently, let go, and watch. Something inside is making it move, but the lid is still closed. Can you imagine two different explanations before asking to peek?",
+    "preview": "mystery"
+  },
+  {
+    "id": "i02",
+    "title": "The woodland repair shop",
+    "character": "Squirrel",
+    "slug": "i02-repair-shop-broken-by-design",
+    "track": "inventor-league",
+    "minutes": 40,
+    "prerequisites": [
+      "c01",
+      "c04"
+    ],
+    "board": "3V_2xAA",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 1,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "aa_cells",
+        "quantity": 2,
+        "label": "AA alkaline cells",
+        "compatibility": "Adult-prepared, isolated 3 V supply.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "holder_2aa",
+        "quantity": 1,
+        "label": "2×AA holder",
+        "compatibility": "Unplug before each physical test.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "red_led",
+        "quantity": 1,
+        "label": "ordinary red LED",
+        "compatibility": "Adult confirms known-good part and polarity marks.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "resistor_220",
+        "quantity": 1,
+        "label": "220 Ω resistor, ¼ W",
+        "compatibility": "Never omitted or bypassed.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "breadboard",
+        "quantity": 1,
+        "label": "solderless breadboard",
+        "compatibility": "Use same strip map as c01.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "jumpers",
+        "quantity": 4,
+        "label": "insulated jumpers",
+        "compatibility": "Adult plants exactly one approved fault.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "fault_envelope",
+        "quantity": 1,
+        "label": "folded paper with private fault record",
+        "compatibility": "Adult records known-good test and selected fault.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "A little lamp has arrived at Squirrel’s repair shop, and it won’t shine. Your helper knows that it worked before hiding one safe fault. There are several possible clues, but changing everything at once would spoil the mystery. Which part would you inspect first?",
+    "preview": "repair"
+  },
+  {
+    "id": "i03",
+    "title": "Can you copy that movement?",
+    "character": "Rabbit",
+    "slug": "i03-steal-the-motion-change-the-design",
+    "track": "inventor-league",
+    "minutes": 45,
+    "prerequisites": [
+      "m01",
+      "m02"
+    ],
+    "board": "none",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 2,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "fasteners",
+        "quantity": 4,
+        "label": "covered blunt paper fasteners",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "reference_linkage",
+        "quantity": 1,
+        "label": "reviewed M02 hand-powered reference",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Rabbit has watched a cardboard machine make a lovely little movement. Your pieces are different sizes, but perhaps they could make something similar. We’ll study what goes in, what comes out, and which joints guide the motion.",
+    "preview": "copy"
+  },
+  {
+    "id": "i04",
+    "title": "A handle that helps",
+    "character": "Mouse",
+    "slug": "i04-design-for-someone-else",
+    "track": "inventor-league",
+    "minutes": 50,
+    "prerequisites": [
+      "i01"
+    ],
+    "board": "none",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 3,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut light cardboard pieces",
+        "compatibility": "Adult rounds edges and prepunctures holes.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "washable marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Mouse’s paper flap is easy to see but awkward to open. A loop might help, or perhaps a wider tab. Different makers may prefer different shapes. Let’s build two possibilities and listen carefully to the person who tries them.",
+    "preview": "handles"
+  },
+  {
+    "id": "i05",
+    "title": "The six-material invention",
+    "character": "Fox",
+    "slug": "i05-the-invention-sprint",
+    "track": "inventor-league",
+    "minutes": 60,
+    "prerequisites": [
+      "i02"
+    ],
+    "board": "none",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 4,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "cardboard",
+        "quantity": 4,
+        "label": "precut cardboard pieces",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 3,
+        "label": "sheets of paper",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "tape",
+        "quantity": 1,
+        "label": "roll of tape",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "string",
+        "quantity": 1,
+        "label": "short piece of string",
+        "compatibility": "Keep loose loops away from neck/body.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "fastener",
+        "quantity": 1,
+        "label": "covered blunt fastener",
+        "compatibility": "Adult fits it.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "marker",
+        "quantity": 1,
+        "label": "marker",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "Fox has cleared a space on the workbench. There’s cardboard, paper, tape, string, a covered fastener, and a marker. What could these become? Choose a small problem, decide what success would look like, and make a first version that teaches you something.",
+    "preview": "invention"
+  },
+  {
+    "id": "i06",
+    "title": "The workshop’s invention day",
+    "character": "Rabbit",
+    "slug": "i06-the-inventors-expo",
+    "track": "inventor-league",
+    "minutes": 50,
+    "prerequisites": [
+      "i05"
+    ],
+    "board": "none",
+    "image": {
+      "path": "assets/i-story-sheet.jpg",
+      "cell": 5,
+      "columns": 3,
+      "rows": 2
+    },
+    "materials": [
+      {
+        "part_id": "prototype",
+        "quantity": 1,
+        "label": "completed reviewed safe prototype",
+        "compatibility": "Use original approved BOM and source if powered.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "test_notes",
+        "quantity": 1,
+        "label": "paper test log",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      },
+      {
+        "part_id": "paper",
+        "quantity": 2,
+        "label": "anonymous paper display sheets",
+        "compatibility": "Adult verifies the actual part before use.",
+        "reusable": true,
+        "optional": false
+      }
+    ],
+    "intro": "The workshop table is filling up with little houses, moving creatures, and drawings of ideas still being worked out. Rabbit has saved a place for your invention. You don’t need a perfect result to tell an interesting story. What did you try, and what did it teach you?",
+    "preview": "expo"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "c01",
+    "title": "A light for the tent",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 3,
+    "last_page": 8
+  },
+  {
+    "id": "c02",
+    "title": "The secret flap",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 9,
+    "last_page": 14
+  },
+  {
+    "id": "c03",
+    "title": "The paperclip test",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 15,
+    "last_page": 20
+  },
+  {
+    "id": "c04",
+    "title": "Turn it around",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 21,
+    "last_page": 26
+  },
+  {
+    "id": "c05",
+    "title": "Two bright windows",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 27,
+    "last_page": 32
+  },
+  {
+    "id": "c06",
+    "title": "A glowing picture",
+    "track_title": "Lights!",
+    "deck": "1_circuit-detectives.pptx",
+    "pdf": "1_circuit-detectives.pdf",
+    "first_page": 33,
+    "last_page": 38
+  },
+  {
+    "id": "p01",
+    "title": "Blink, little light",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 3,
+    "last_page": 8
+  },
+  {
+    "id": "p02",
+    "title": "The little traffic light",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 9,
+    "last_page": 14
+  },
+  {
+    "id": "p03",
+    "title": "The button knows",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 15,
+    "last_page": 20
+  },
+  {
+    "id": "p04",
+    "title": "A softer glow",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 21,
+    "last_page": 26
+  },
+  {
+    "id": "p05",
+    "title": "A secret message",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 27,
+    "last_page": 32
+  },
+  {
+    "id": "p06",
+    "title": "Wait for the light",
+    "track_title": "Tell a light what to do",
+    "deck": "2_code-your-world.pptx",
+    "pdf": "2_code-your-world.pdf",
+    "first_page": 33,
+    "last_page": 38
+  },
+  {
+    "id": "m01",
+    "title": "The cardboard jaw",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 3,
+    "last_page": 8
+  },
+  {
+    "id": "m02",
+    "title": "The drawing machine",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 9,
+    "last_page": 14
+  },
+  {
+    "id": "m03",
+    "title": "A leaf that waves",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 15,
+    "last_page": 20
+  },
+  {
+    "id": "m04",
+    "title": "Turn the dial",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 21,
+    "last_page": 26
+  },
+  {
+    "id": "m05",
+    "title": "Up goes the bridge",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 27,
+    "last_page": 32
+  },
+  {
+    "id": "m06",
+    "title": "A creature with a wiggle",
+    "track_title": "Cardboard on the move",
+    "deck": "3_machines-in-motion.pptx",
+    "pdf": "3_machines-in-motion.pdf",
+    "first_page": 33,
+    "last_page": 38
+  },
+  {
+    "id": "s01",
+    "title": "A paper cloud",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 3,
+    "last_page": 8
+  },
+  {
+    "id": "s02",
+    "title": "A light for the dark",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 9,
+    "last_page": 14
+  },
+  {
+    "id": "s03",
+    "title": "An echo in a box",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 15,
+    "last_page": 20
+  },
+  {
+    "id": "s04",
+    "title": "Getting closer",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 21,
+    "last_page": 26
+  },
+  {
+    "id": "s05",
+    "title": "A warm little bead",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 27,
+    "last_page": 32
+  },
+  {
+    "id": "s06",
+    "title": "The open box",
+    "track_title": "What can a sensor tell?",
+    "deck": "4_sensor-sleuths.pptx",
+    "pdf": "4_sensor-sleuths.pdf",
+    "first_page": 33,
+    "last_page": 38
+  },
+  {
+    "id": "i01",
+    "title": "What is in the box?",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 3,
+    "last_page": 8
+  },
+  {
+    "id": "i02",
+    "title": "The light is out",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 9,
+    "last_page": 14
+  },
+  {
+    "id": "i03",
+    "title": "Copy the move",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 15,
+    "last_page": 20
+  },
+  {
+    "id": "i04",
+    "title": "Two handles",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 21,
+    "last_page": 26
+  },
+  {
+    "id": "i05",
+    "title": "One more try",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 27,
+    "last_page": 32
+  },
+  {
+    "id": "i06",
+    "title": "I made that!",
+    "track_title": "I made that!",
+    "deck": "5_inventor-league.pptx",
+    "pdf": "5_inventor-league.pdf",
+    "first_page": 33,
+    "last_page": 38
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "generator": "built-in image_gen",
+  "created": "2026-11-17",
+  "assets": [
+    {
+      "path": "public/art/workshop-friends.png",
+      "prompt": "Use case: illustration-story. Asset type: character reference illustration for Young Inventors, an engineering workshop for ages 8–13. Create a beautiful original illustrated character lineup of four small woodland animal friends: a thoughtful little warm-gray mouse in a forest-green apron, a russet fox with a cream muzzle wearing a mustard neckerchief, a cream rabbit in blue-green overalls, and a cinnamon squirrel with a magnificent curled tail wearing a coral waistcoat. Each character holds one small maker object: mouse a miniature cardboard tent, fox a cardboard lever puppet, rabbit a paper boat, squirrel a pencil and little notebook. Charming and expressive but suitable for older children, curious faces, rounded natural proportions, distinct silhouettes. Handmade layered paper collage with colored-pencil detail and tactile matte paper edges, sophisticated children's book illustration. Warm ivory paper backdrop, woodland green, ochre, terracotta and muted teal palette. Full bodies all visible, arranged side by side with generous breathing room and consistent scale. No text, no lettering, no logos, no UI, no electrical diagram, no watermarks. Landscape composition.",
+      "purpose": "Consistent four-character reference and about-page illustration",
+      "alt": "A mouse, fox, rabbit, and squirrel share their handmade inventions: a tent, a moving cardboard animal, a paper boat, and a notebook."
+    },
+    {
+      "path": "public/art/workshop-hero.png",
+      "prompt": "Use case: illustration-story. Asset type: wide website hero illustration for Young Inventors woodland engineering workshop, ages 8–13. Use the attached character lineup as the identity and illustration style reference. Same warm-gray mouse in green apron, russet fox in mustard neckerchief and brown vest, cream rabbit in teal overalls, cinnamon squirrel in coral waistcoat. Create an original expansive cozy woodland makers' workshop scene. A big wooden worktable in a sunlit open garden shed. All four friends are curious and engrossed in making things together. Mouse and rabbit inspect a tiny cardboard tent with a warm little red light at its entrance. Fox gently moves a simple cardboard animal jaw lever. Squirrel sketches observations in a notebook with pencil. Table has a few paper strips, rolls of tape, tiny paper boat, chunky cardboard mechanism, colored pencils, closed AA holder tucked safely beside the model. This is a story illustration, NOT wiring guidance: no diagram labels, no exposed complicated electronic wiring or dangerous tools. Shelves behind contain jars of wooden pegs and colorful craft paper, plants, unfinished friendly cardboard inventions. Soft green woodland beyond open windows. Handmade layered paper collage and colored-pencil illustration, matte tactile textures, beautiful editorial picture-book quality with thoughtful detail, ages8–13 not nursery art. Composition wide landscape approximately 3:2 or wider, all heads and important objects clear, table fills lower half, soft sunny cream backdrop and forest green foliage. No text, no typography, no UI, no logos or watermarks. Preserve the recognizable identities and outfits from the reference image.",
+      "reference": "public/art/workshop-friends.png",
+      "purpose": "Workshop home hero, story illustration only",
+      "alt": "Four woodland friends gather at a sunny workbench, investigating a glowing tent lamp and a cardboard jaw among paper, pencils, and little inventions."
+    }
+  ],
+  "inspection": "Both generated images inspected visually. Four consistent characters and outfits, coherent paper textures, no text or UI. Hero is a story illustration, not physical wiring guidance."
+}

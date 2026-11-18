@@ -1,0 +1,35 @@
+{
+  "name": "young-inventors",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "npm run validate && next build",
+    "start": "next dev --hostname 0.0.0.0",
+    "validate": "tsx scripts/validate.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "tsx --test tests/*.test.ts",
+    "test:e2e": "playwright test",
+    "preview": "node scripts/serve.mjs",
+    "test:sketches": "python3 scripts/check-sketches-portable.py"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "1.65.1",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.4.6",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

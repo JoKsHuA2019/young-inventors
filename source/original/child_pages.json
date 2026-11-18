@@ -1,0 +1,2977 @@
+{
+  "version": "4.0",
+  "audience": "Younger read-aloud / early-reader view, roughly 6–9 with an adult. Activities still use the approved-scope hardware from the helper guide.",
+  "use": "These are the child-facing app screens and book pages. Keep technical text in the separate helper view.",
+  "read_aloud_intro": "Pick something to make. Read with your helper. Stop to try things along the way.",
+  "helper_intro": "These are shared making activities. Prepare and review the exact kit before reading with a child. The illustrations show ideas and actions, not complete wiring instructions. Exact hardware and physical tests are still pending.",
+  "tracks": [
+    {
+      "id": "circuit-detectives",
+      "title": "Lights!",
+      "original_title": "Circuit Detectives"
+    },
+    {
+      "id": "code-your-world",
+      "title": "Tell a light what to do",
+      "original_title": "Code Your World"
+    },
+    {
+      "id": "machines-in-motion",
+      "title": "Cardboard on the move",
+      "original_title": "Machines in Motion"
+    },
+    {
+      "id": "sensor-sleuths",
+      "title": "What can a sensor tell?",
+      "original_title": "Sensor Sleuths"
+    },
+    {
+      "id": "inventor-league",
+      "title": "I made that!",
+      "original_title": "The Inventor League"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "c01",
+      "title": "A light for the tent",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 30,
+      "prerequisites": [],
+      "pages": [
+        {
+          "page_id": "c01-01",
+          "kind": "hook",
+          "text": "The tent has a door.\nThe tent has a bed.\nNow it needs a light.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c01-02",
+          "kind": "predict",
+          "text": "Can a light shine\nif there is a gap\nin one of its wires?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c01-03",
+          "kind": "build",
+          "text": "Your helper adds a resistor.\nIt helps protect the little light.\nWith the battery unplugged,\nbuild the wire loop together.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prepare a known-good 3 V loop, confirm breadboard strip continuity, mark trimmed LED polarity, and keep a spare red LED and matched AA pair. Do not plant a short circuit.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c01-04",
+          "kind": "explore",
+          "text": "Your helper checks the loop.\nPlug in the battery.\nDoes the light shine?\nUnplug before your helper opens one wire.\nCheck together, then try again.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c01-05",
+          "kind": "reveal",
+          "text": "A gap breaks the path.\nOur light goes out.\nUnplug before closing the gap.\nCheck the loop and try once more.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c01-06",
+          "kind": "reflect",
+          "text": "Where will your light go?\nIn a cave?\nIn a tiny house?\nTell someone what made it go dark.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c01",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "c02",
+      "title": "The secret flap",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 35,
+      "prerequisites": [
+        "c01"
+      ],
+      "pages": [
+        {
+          "page_id": "c02-01",
+          "kind": "hook",
+          "text": "This flap has a secret.\nClose it,\nand a little light can shine.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c02-02",
+          "kind": "predict",
+          "text": "What do you think happens\nwhen the shiny foil pieces\nstop touching?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c02-03",
+          "kind": "build",
+          "text": "Unplug the battery.\nMake the flap with your helper.\nThe two foil pieces must meet\nwhen the flap closes.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prepare foil with smooth edges and secure insulated joints. Keep the entire switch in the return path. No foil across battery terminals.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c02-04",
+          "kind": "explore",
+          "text": "Ask your helper to check.\nConnect the battery.\nOpen the flap. Close it.\nOpen it again.\nWhat does the light do?",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c02-05",
+          "kind": "reveal",
+          "text": "Touching foil closes the path.\nThe light comes on.\nA gap opens the path.\nThe light goes off.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c02-06",
+          "kind": "reflect",
+          "text": "Can you make a paper door\nthat works the same way?\nTell someone where the path breaks.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c02",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "c03",
+      "title": "The paperclip test",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 35,
+      "prerequisites": [
+        "c01"
+      ],
+      "pages": [
+        {
+          "page_id": "c03-01",
+          "kind": "hook",
+          "text": "Here is a paperclip.\nHere is a plastic lid.\nThey look different.\nWill they do different things?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c03-02",
+          "kind": "predict",
+          "text": "Which one could help\nour little light shine?\nWhat is your guess?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c03-03",
+          "kind": "build",
+          "text": "Your helper makes a safe tester.\nIt has one gap.\nWith the battery unplugged,\nput one clean, dry object in the gap.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Approve clean dry samples in advance. Never test skin, sockets, battery terminals, liquids, sharp scraps or dismantled appliances.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c03-04",
+          "kind": "explore",
+          "text": "Ask your helper to check.\nConnect the battery and look.\nUnplug before trying the next object.\nTry four objects.\nWhich ones make the light shine?",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c03-05",
+          "kind": "reveal",
+          "text": "Metal lets electricity pass.\nIt is a conductor.\nPlastic often does not.\nCheck for loose wires\nbefore deciding.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c03-06",
+          "kind": "reflect",
+          "text": "Choose a safe mystery object\nfor your helper to test.\nWhat made you think\nit would work?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c03",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "c04",
+      "title": "Turn it around",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 25,
+      "prerequisites": [
+        "c01"
+      ],
+      "pages": [
+        {
+          "page_id": "c04-01",
+          "kind": "hook",
+          "text": "An LED is a tiny light.\nThis one has two legs.\nDoes it matter\nwhich way they go?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c04-02",
+          "kind": "predict",
+          "text": "If we turn the LED around,\nwill it still shine?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c04-03",
+          "kind": "build",
+          "text": "Unplug the battery.\nAsk your helper to mark the legs.\nBuild the loop together.\nKeep the resistor in its place.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use only the reviewed 3 V red-LED kit. Verify polarity markings and reverse tolerance for the actual selected component.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c04-04",
+          "kind": "explore",
+          "text": "Check together, then try it.\nUnplug.\nYour helper turns only the LED around.\nCheck again before connecting power.\nWhat changed?",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c04-05",
+          "kind": "reveal",
+          "text": "An LED has a direction.\nIn our loop, one way shines.\nThe other way stays dark.\nThe resistor stays in place.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c04-06",
+          "kind": "reflect",
+          "text": "Make a little paper label\nto show the right way round.\nHow could you help someone\nremember it?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c04",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "c05",
+      "title": "Two bright windows",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 40,
+      "prerequisites": [
+        "c01"
+      ],
+      "pages": [
+        {
+          "page_id": "c05-01",
+          "kind": "hook",
+          "text": "Our little house\nhas two windows.\nWe want a light\nin each one.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c05-02",
+          "kind": "predict",
+          "text": "If one light loses its path,\nmust the other go dark too?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c05-03",
+          "kind": "build",
+          "text": "Unplug the battery.\nBuild two paths with your helper.\nEach light needs\nits own resistor.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prepare two matched ordinary red LEDs. No single shared resistor for two parallel LEDs. Use branch labels instead of depending on wire colors.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c05-04",
+          "kind": "explore",
+          "text": "Check together, then connect power.\nLook at both lights.\nUnplug before your helper opens one path.\nCheck and try again.\nDoes the other light stay on?",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c05-05",
+          "kind": "reveal",
+          "text": "Each light has its own path.\nOne path can break\nwhile the other stays whole.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c05-06",
+          "kind": "reflect",
+          "text": "Make two rooms for your lights.\nShow someone each path.\nWhat do both paths share?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c05",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "c06",
+      "title": "A glowing picture",
+      "track": "circuit-detectives",
+      "book_track_title": "Lights!",
+      "minutes": 45,
+      "prerequisites": [
+        "c01",
+        "c02",
+        "c04"
+      ],
+      "pages": [
+        {
+          "page_id": "c06-01",
+          "kind": "hook",
+          "text": "A house in the woods.\nA star in the sky.\nWhat picture could you make\nwith one little light?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c06-02",
+          "kind": "predict",
+          "text": "Where should your light go\nso someone can see\nwhat you made?",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c06-03",
+          "kind": "build",
+          "text": "Draw your picture first.\nKeep the battery unplugged\nwhile you and your helper\nfit the little light and wires.",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prerequisites include C01, C02 and C04. Require C05 readiness before an optional second branch. Precut windows and keep cells accessible.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c06-04",
+          "kind": "explore",
+          "text": "Your helper checks the wires.\nTurn on the light.\nMove the picture gently\nto its display spot.\nDoes it still work?",
+          "image": {
+            "path": "assets/c-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c06-05",
+          "kind": "reveal",
+          "text": "Paper can tug on a wire.\nA wire can come loose.\nUnplug before fixing it.\nThen check and try again.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "c06-06",
+          "kind": "reflect",
+          "text": "Change one part of your picture.\nWhat looks better now?\nShow someone what you changed.",
+          "image": {
+            "path": "assets/c-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "c06",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p01",
+      "title": "Blink, little light",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 30,
+      "prerequisites": [],
+      "pages": [
+        {
+          "page_id": "p01-01",
+          "kind": "hook",
+          "text": "The board has a tiny light.\nOn. Off.\nOn. Off.\nCan we change its blink?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p01-02",
+          "kind": "predict",
+          "text": "What will happen\nif the light waits\nfor less time?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p01-03",
+          "kind": "build",
+          "text": "Your helper opens the code.\nFind both waits marked 500.\nWatch the first blink pattern\nbefore changing anything.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prepare IDE, board package and USB access before the learner session. No wiring needed and no external LED resistor needed for the onboard L LED.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p01-04",
+          "kind": "explore",
+          "text": "Change both waits to 250.\nAsk your helper to upload.\nWatch the same little light.\nIs it faster now?",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p01-05",
+          "kind": "reveal",
+          "text": "The code repeats.\nTurn on. Wait.\nTurn off. Wait.\nShorter waits make faster blinks.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p01-06",
+          "kind": "reflect",
+          "text": "Make a blink pattern of your own.\nCan someone recognize it?\nTell them which waits you changed.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p01",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p02",
+      "title": "The little traffic light",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 40,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "p02-01",
+          "kind": "hook",
+          "text": "Red. Green. Yellow.\nOur tiny town\nneeds a traffic light.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p02-02",
+          "kind": "predict",
+          "text": "If green stays on longer,\nwill the whole pattern\ntake longer too?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p02-03",
+          "kind": "build",
+          "text": "Keep USB unplugged.\nBuild the three lights\nwith your helper.\nEach light gets its own resistor.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use ordinary low-current indicator LEDs. Confirm each chosen color lights acceptably on the reviewed Uno/220 ohm branch.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p02-04",
+          "kind": "explore",
+          "text": "Ask your helper to check and upload.\nWatch one whole pattern.\nNow make only the green wait\ntwice as long.\nWatch again.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p02-05",
+          "kind": "reveal",
+          "text": "The order can stay the same\nwhile the timing changes.\nA longer green wait\nmakes this whole pattern longer.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p02-06",
+          "kind": "reflect",
+          "text": "How long should red last\nin your pretend town?\nChoose a time, try it,\nand tell someone what changed.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p02",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p03",
+      "title": "The button knows",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 40,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "p03-01",
+          "kind": "hook",
+          "text": "Press the button.\nThe light comes on.\nLet go.\nThe light goes off.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p03-02",
+          "kind": "predict",
+          "text": "How does the board know\nwhen your finger\nhas pressed the button?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p03-03",
+          "kind": "build",
+          "text": "Unplug USB.\nYour helper shows you\nthe two switch contacts.\nBuild the checked button-and-light circuit together.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prepare IDE/Uno support offline where possible. Verify the exact switch model, LED polarity and data cable. Do the wiring unpowered. Keep a printed HIGH/LOW observation option for learners who cannot use Serial independently.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p03-04",
+          "kind": "explore",
+          "text": "Ask your helper to check and upload.\nPress. Let go.\nTry five times.\nLook at the light\nand the words on the screen.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p03-05",
+          "kind": "reveal",
+          "text": "Our button reads LOW\nwhen you press it.\nThe code uses that LOW\nto turn the light on.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p03-06",
+          "kind": "reflect",
+          "text": "Can a paper flap\npress your button for you?\nUnplug before changing the build.\nShow someone how your flap works.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p03",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p04",
+      "title": "A softer glow",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 35,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "p04-01",
+          "kind": "hook",
+          "text": "One light.\nTwo different glows.\nHow can we make\nthe light look dimmer?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p04-02",
+          "kind": "predict",
+          "text": "Which number will look brighter:\n64 or 192?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p04-03",
+          "kind": "build",
+          "text": "Unplug the board.\nBuild the light and resistor\nwith your helper.\nLet them choose the right connection.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Keep the LED away from eyes and use the fixed resistor. Do not present PWM as a variable DC power supply.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p04-04",
+          "kind": "explore",
+          "text": "Ask your helper to check and upload.\nTry 64.\nThen try 192.\nWatch from the same place.\nWhich glow looks brighter?",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p04-05",
+          "kind": "reveal",
+          "text": "The light flashes too fast to see.\nMore time on\nusually looks brighter.\nLess time on looks dimmer.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p04-06",
+          "kind": "reflect",
+          "text": "Can you make a slow, soft glow\nfor a paper lighthouse?\nTell someone what the number changes.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p04",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p05",
+      "title": "A secret message",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 40,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "p05-01",
+          "kind": "hook",
+          "text": "Two short flashes.\nOne long flash.\nSomeone at the pretend camp\nis sending a message.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p05-02",
+          "kind": "predict",
+          "text": "Could you tell two messages apart\njust by watching\nhow long the light stays on?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p05-03",
+          "kind": "build",
+          "text": "Choose a silent light pattern\nwith your helper.\nA quiet beep works too.\nLet your helper check the sound first.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Adult approves current rating and comfortable sound level before class. No sound is required. Built-in LED alternative requires no external LED wiring.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p05-04",
+          "kind": "explore",
+          "text": "Try one short signal\nand one long signal.\nKeep the sound comfortable,\nor use only light.\nAsk someone to copy the pattern.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p05-05",
+          "kind": "reveal",
+          "text": "A signal can be short or long.\nOur light uses that length\nto make a message.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p05-06",
+          "kind": "reflect",
+          "text": "Make two secret messages.\nCan a partner tell them apart\nthree times in a row?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p05",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "p06",
+      "title": "Wait for the light",
+      "track": "code-your-world",
+      "book_track_title": "Tell a light what to do",
+      "minutes": 50,
+      "prerequisites": [
+        "p03",
+        "p04"
+      ],
+      "pages": [
+        {
+          "page_id": "p06-01",
+          "kind": "hook",
+          "text": "Your finger is ready.\nThe light is not.\nWait...\nWait...",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p06-02",
+          "kind": "predict",
+          "text": "If you press before the light,\nshould that try count?",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p06-03",
+          "kind": "build",
+          "text": "Unplug USB.\nBuild the button and light\nwith your helper.\nAsk them to check and upload the game.",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Explain timing limitations. Pseudorandom delays and 20 ms debounce support the lesson but do not produce certified human reaction measurements.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p06-04",
+          "kind": "explore",
+          "text": "Let go of the button.\nWait for the light.\nThen press!\nTry an early press once too.\nWhat does the game say?",
+          "image": {
+            "path": "assets/p-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p06-05",
+          "kind": "reveal",
+          "text": "The game checks\nwhen you press.\nAn early press is a false start.\nA press after the light gives a time.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "p06-06",
+          "kind": "reflect",
+          "text": "Try five fair turns.\nWhat changes as you practise?\nYour helper can explain\nwhy the timing is only an estimate.",
+          "image": {
+            "path": "assets/p-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "p06",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m01",
+      "title": "The cardboard jaw",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 35,
+      "prerequisites": [],
+      "pages": [
+        {
+          "page_id": "m01-01",
+          "kind": "hook",
+          "text": "This cardboard jaw\nhas a long, long tail.\nPush the tail down.\nWhat could rise?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m01-02",
+          "kind": "predict",
+          "text": "Where would you push\nto lift the same paper load\nmore easily?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m01-03",
+          "kind": "build",
+          "text": "Your helper fits the turning point.\nIt is called a pivot.\nTape on a tiny paper load.\nFind the two marked push spots.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Precut and punch holes out of the child activity; no knives or sharp punches in learner steps. Dry-run clearance and protect paper-fastener prongs. Choose a very light load and accept inconclusive effort judgments.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m01-04",
+          "kind": "explore",
+          "text": "Push gently at the near spot.\nThen try the far spot.\nLift to the same mark each time.\nKeep fingers away from the pivot.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m01-05",
+          "kind": "reveal",
+          "text": "The far spot can feel easier.\nBut your hand moves farther\nto lift the load\nthe same height.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m01-06",
+          "kind": "reflect",
+          "text": "Turn your lever into an animal.\nWhat moves when you push?\nShow someone the easier push spot.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m01",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m02",
+      "title": "The drawing machine",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 40,
+      "prerequisites": [
+        "m01"
+      ],
+      "pages": [
+        {
+          "page_id": "m02-01",
+          "kind": "hook",
+          "text": "A handle turns.\nThe marker moves.\nA line grows\nacross the paper.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m02-02",
+          "kind": "predict",
+          "text": "If we move one pivot,\nwill the line\nfollow the same path?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m02-03",
+          "kind": "build",
+          "text": "Your helper fits the paper pins.\nTape on a light marker.\nThe parts must turn freely.\nNever force them.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Bench-check this exact four-bar geometry and alternate hole before learners use it. Adult does all piercing and fastener fitting. Use limited hand motion, no motors.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m02-04",
+          "kind": "explore",
+          "text": "Turn the handle through\nthe same small move three times.\nStop. Your helper moves one pivot.\nTry the same move again.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m02-05",
+          "kind": "reveal",
+          "text": "The links guide each other.\nA new pivot spot\ncan make a new path.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m02-06",
+          "kind": "reflect",
+          "text": "Turn your lines into a picture.\nWhich pivot did you move?\nTell someone how the line changed.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m02",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m03",
+      "title": "A leaf that waves",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 45,
+      "prerequisites": [
+        "p01",
+        "m01"
+      ],
+      "pages": [
+        {
+          "page_id": "m03-01",
+          "kind": "hook",
+          "text": "Our paper leaf\nwants to wave hello.\nCan a little motor help?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m03-02",
+          "kind": "predict",
+          "text": "Will two different commands\nmake the leaf point\ntwo different ways?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m03-03",
+          "kind": "build",
+          "text": "This small motor is a servo.\nYour helper sets up its own power\nand checks it without the leaf.\nKeep hands clear.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use a guarded low-force micro-servo. Adult prepares the regulated supply and handles both-source isolation. Verify startup motion before attaching the arm.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m03-04",
+          "kind": "explore",
+          "text": "Turn both power sources off.\nYour helper fits the light paper leaf.\nAfter another check, watch it move\nbetween the two safe positions.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m03-05",
+          "kind": "reveal",
+          "text": "The board sends a signal.\nThe servo tries to turn\nto the position we asked for.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m03-06",
+          "kind": "reflect",
+          "text": "Change a pause in the code\nwith your helper.\nCan your leaf wave slowly?\nKeep the same safe positions.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m03",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m04",
+      "title": "Turn the dial",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 45,
+      "prerequisites": [
+        "m03"
+      ],
+      "pages": [
+        {
+          "page_id": "m04-01",
+          "kind": "hook",
+          "text": "A little turn here.\nA little move there.\nCan your dial\nmove a paper puppet?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m04-02",
+          "kind": "predict",
+          "text": "What will the puppet do\nwhen you turn the dial\ntoward its other end?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m04-03",
+          "kind": "build",
+          "text": "Your helper sets up\nthe dial and servo.\nThe servo keeps its own power supply.\nAll wiring changes happen with power off.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use a real three-terminal 10 kohm potentiometer and check its pinout. Do not extend servo limits to make a dial appear more responsive.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m04-04",
+          "kind": "explore",
+          "text": "Turn slowly.\nTry the low end,\nthe middle and the high end.\nKeep clear of the moving arm.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m04-05",
+          "kind": "reveal",
+          "text": "The dial changes a reading.\nThe code uses that reading\nto choose a servo position.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m04-06",
+          "kind": "reflect",
+          "text": "Give your puppet a job.\nCan it point to three places?\nShow someone how the dial\ncontrols the move.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m04",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m05",
+      "title": "Up goes the bridge",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 50,
+      "prerequisites": [
+        "m03",
+        "p03"
+      ],
+      "pages": [
+        {
+          "page_id": "m05-01",
+          "kind": "hook",
+          "text": "A paper boat is coming.\nThe bridge is in the way.\nUp, little bridge!",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m05-02",
+          "kind": "predict",
+          "text": "Could a button\nlift the bridge\nwithout your hand touching it?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m05-03",
+          "kind": "build",
+          "text": "Your helper checks the servo first.\nWith both power sources off,\nfit the light bridge together.\nLeave the hinge clear.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Prebuild and guard the hinge and linkage. Adult tests startup, both targets and clearances before student interaction.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m05-04",
+          "kind": "explore",
+          "text": "After your helper checks,\npress and let go.\nWatch the bridge open and close.\nStop if it catches or strains.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m05-05",
+          "kind": "reveal",
+          "text": "The button sends a request.\nThe code picks a position.\nThe servo moves the bridge.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m05-06",
+          "kind": "reflect",
+          "text": "Make a paper boat\nthat fits your river.\nWhat would you check\nif the bridge got stuck?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m05",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "m06",
+      "title": "A creature with a wiggle",
+      "track": "machines-in-motion",
+      "book_track_title": "Cardboard on the move",
+      "minutes": 55,
+      "prerequisites": [
+        "m03"
+      ],
+      "pages": [
+        {
+          "page_id": "m06-01",
+          "kind": "hook",
+          "text": "This paper creature\nhas something to say.\nNo words.\nJust a wiggle.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m06-02",
+          "kind": "predict",
+          "text": "Could a slow move\nand a quick move\nlook like different moods?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m06-03",
+          "kind": "build",
+          "text": "Your helper checks the servo\nwith nothing attached.\nTurn both power sources off\nbefore fitting your light paper creature.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Keep audience feedback anonymous and local. Use the reviewed servo setup and avoid claiming a particular gesture objectively means an emotion.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m06-04",
+          "kind": "explore",
+          "text": "After your helper checks,\nwatch the two moves.\nChange one pause in the code.\nKeep the same safe positions.",
+          "image": {
+            "path": "assets/m-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m06-05",
+          "kind": "reveal",
+          "text": "Timing can change\nhow a move looks.\nYour partner might see excitement.\nYou might see surprise.",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "m06-06",
+          "kind": "reflect",
+          "text": "Give your creature a greeting.\nWhat did your partner think\nit was saying?",
+          "image": {
+            "path": "assets/m-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "m06",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s01",
+      "title": "A paper cloud",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 40,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "s01-01",
+          "kind": "hook",
+          "text": "A paper cloud\npasses over the sensor.\nWill the board\nnotice the shade?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s01-02",
+          "kind": "predict",
+          "text": "Will the number get bigger\nor smaller\nwhen you cover the sensor?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s01-03",
+          "kind": "build",
+          "text": "Your helper builds and checks\nthe light-sensor circuit.\nAsk them to show you\nthe changing numbers.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use a two-lead LDR, not a module. Verify actual resistor value and divider direction. Prepare Serial display or have the mentor read values aloud; learners can sort high/low cards instead of typing.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s01-04",
+          "kind": "explore",
+          "text": "Watch three numbers in room light.\nShade the sensor with dry card.\nWatch three more.\nTake the card away.\nWhat happens now?",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s01-05",
+          "kind": "reveal",
+          "text": "For our circuit,\nbrighter light usually gives\na bigger number.\nShade usually gives a smaller one.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s01-06",
+          "kind": "reflect",
+          "text": "Make a paper cloud\nthat can slide past the sensor.\nTell someone what happened\nto the numbers.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s01",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s02",
+      "title": "A light for the dark",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 45,
+      "prerequisites": [
+        "s01",
+        "p03"
+      ],
+      "pages": [
+        {
+          "page_id": "s02-01",
+          "kind": "hook",
+          "text": "The little reading nook\nis getting dark.\nCan its lamp\nturn on by itself?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s02-02",
+          "kind": "predict",
+          "text": "How could the board decide\nwhen it is\ndark enough?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s02-03",
+          "kind": "build",
+          "text": "Your helper checks the sensor and LED.\nRead the numbers in light and shade.\nTogether, choose a number\nbetween those two groups.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use local recorded calibration. The sample 500 threshold is an editable starting value, not a promised universal setting.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s02-04",
+          "kind": "explore",
+          "text": "Try the light rule.\nCover the sensor.\nUncover it.\nWhat happens to the lamp?\nNow try a different room.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s02-05",
+          "kind": "reveal",
+          "text": "That number tells our code\nwhen to turn the lamp on.\nIn another room,\nwe may need a new number.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s02-06",
+          "kind": "reflect",
+          "text": "Make a paper shade\nfor your reading nook.\nDid the lamp ever turn on\nwhen you did not expect it?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s02",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s03",
+      "title": "An echo in a box",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 45,
+      "prerequisites": [
+        "p01"
+      ],
+      "pages": [
+        {
+          "page_id": "s03-01",
+          "kind": "hook",
+          "text": "Hello, cardboard wall!\nThe sensor sends out sound.\nWill an echo\ncome back?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s03-02",
+          "kind": "predict",
+          "text": "Will a closer wall\nsend the echo back\nsooner?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s03-03",
+          "kind": "build",
+          "text": "Your helper builds and checks\nthe sound sensor.\nHold a flat cardboard target\nfacing its two round openings.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Confirm exact module pinout. ECHO is a 5 V signal and needs a separately reviewed level-shifting variant for 3.3 V boards.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s03-04",
+          "kind": "explore",
+          "text": "Try about 10, 20 and 40 centimetres.\nRead three numbers at each spot.\nIf no reading comes back,\nwrite “missing,” not zero.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s03-05",
+          "kind": "reveal",
+          "text": "Sound goes to the wall\nand back again.\nA longer trip\nusually takes more time.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s03-06",
+          "kind": "reflect",
+          "text": "Try a soft fabric target\nat the same safe distance.\nDoes it give the same clear echo?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s03",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s04",
+      "title": "Getting closer",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 50,
+      "prerequisites": [
+        "s03",
+        "p04"
+      ],
+      "pages": [
+        {
+          "page_id": "s04-01",
+          "kind": "hook",
+          "text": "Our toy block\nis rolling toward the wall.\nCan a little light\ngive us a clue?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s04-02",
+          "kind": "predict",
+          "text": "As the block gets closer,\nshould the flashes get\nfaster or slower?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s04-03",
+          "kind": "build",
+          "text": "Your helper checks\nthe sensor and flashing light.\nThis is a tabletop model,\nnot a safety device.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Never present this as automotive safety equipment. The invalid-reading state must remain visible in Serial; an off LED alone cannot mean safe.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s04-04",
+          "kind": "explore",
+          "text": "Try the target at\n15, 35 and 70 centimetres.\nCount flashes for the same time.\nThen remove the target.\nWhat does the screen say?",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s04-05",
+          "kind": "reveal",
+          "text": "Closer readings make faster flashes.\nA missing echo means\nwe do not know the distance.\nAn off light cannot mean “all clear.”",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s04-06",
+          "kind": "reflect",
+          "text": "Can you invent a different sign\nfor “I do not know”?\nTell someone why\nyour model needs it.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s04",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s05",
+      "title": "A warm little bead",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 45,
+      "prerequisites": [
+        "s01"
+      ],
+      "pages": [
+        {
+          "page_id": "s05-01",
+          "kind": "hook",
+          "text": "Here is a tiny bead.\nYour hand is warm.\nCould the bead\nnotice?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s05-02",
+          "kind": "predict",
+          "text": "What might happen\nto the number\nwhen the bead gets warmer?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s05-03",
+          "kind": "build",
+          "text": "Your helper checks\nthe insulated bead and its wires.\nTouch only the dry, covered bead.\nKeep fingers off the metal legs.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use a documented insulated bead. No contact with exposed leads. No flame, hot water, heater, calibrated temperature or medical claims.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s05-04",
+          "kind": "explore",
+          "text": "Watch the room readings.\nGently warm the checked bead\nwith dry fingertips.\nLet go and wait.\nWatch the numbers again.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s05-05",
+          "kind": "reveal",
+          "text": "The numbers may change slowly.\nThey are clues about this bead.\nThey are not yet\na temperature in degrees.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s05-06",
+          "kind": "reflect",
+          "text": "Draw the way\nyour numbers changed.\nIf the change was too small to tell,\nsay so.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s05",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "s06",
+      "title": "The open box",
+      "track": "sensor-sleuths",
+      "book_track_title": "What can a sensor tell?",
+      "minutes": 55,
+      "prerequisites": [
+        "s02"
+      ],
+      "pages": [
+        {
+          "page_id": "s06-01",
+          "kind": "hook",
+          "text": "The treasure box opens.\nLight slips inside.\nCan our sensor\nspot the change?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s06-02",
+          "kind": "predict",
+          "text": "Would opening the box\nalways make it brighter\ninside?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s06-03",
+          "kind": "build",
+          "text": "Your helper checks\nthe light sensor and lamp.\nKeep wires clear of the lid.\nCompare open and closed readings.",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Keep cardboard dry and wires unpinched. No personal valuables or security promises. Optional public sharing stays disabled.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s06-04",
+          "kind": "explore",
+          "text": "Try five openings\nin one room.\nUse the same rule\nin a darker room.\nDoes it still notice every opening?",
+          "image": {
+            "path": "assets/s-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s06-05",
+          "kind": "reveal",
+          "text": "The sensor follows light,\nnot the lid itself.\nA dark room\ncan hide the clue.",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "s06-06",
+          "kind": "reflect",
+          "text": "Move the sensor\nwith power off and your helper’s help.\nCheck and try again.\nDid the new spot work better?",
+          "image": {
+            "path": "assets/s-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "s06",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i01",
+      "title": "What is in the box?",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 40,
+      "prerequisites": [],
+      "pages": [
+        {
+          "page_id": "i01-01",
+          "kind": "hook",
+          "text": "There is something\ninside this box.\nAll we can see\nis a little tab.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i01-02",
+          "kind": "predict",
+          "text": "If you push the tab\nand let go,\nwill it come back?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i01-03",
+          "kind": "build",
+          "text": "Your helper gives you\na safe cardboard mystery box.\nLook at the outside first.\nLeave the inside closed.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Adult builds and tests the contained mechanism. Use no hazardous appliance, strong spring, powered motor or loose snap-back part. Any internal reveal is adult-controlled.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i01-04",
+          "kind": "explore",
+          "text": "Push gently and let go.\nTry the same move again.\nWhat did you see?\nWhat might be making it happen?",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i01-05",
+          "kind": "reveal",
+          "text": "“The tab came back”\nis something we saw.\n“An elastic band pulled it”\nis one possible reason.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i01-06",
+          "kind": "reflect",
+          "text": "Think of another reason.\nWhat gentle test could help?\nAsk before opening the box.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 0,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i01",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i02",
+      "title": "The light is out",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 40,
+      "prerequisites": [
+        "c01",
+        "c04"
+      ],
+      "pages": [
+        {
+          "page_id": "i02-01",
+          "kind": "hook",
+          "text": "The little light\nwill not shine.\nWelcome to\nthe repair shop.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i02-02",
+          "kind": "predict",
+          "text": "Could a loose wire\nand a backwards LED\nboth make the light go dark?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i02-03",
+          "kind": "build",
+          "text": "Your helper has hidden\none safe problem in a checked circuit.\nUnplug the battery.\nLook before changing anything.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Before learners arrive, verify known-good operation and log it. Disconnect power; plant exactly one: open return lead, reversed red LED, or disconnected resistor lead. Never plant shorts, overheating, excess voltage, resistor bypass or damaged cells. Seal the fault record until debrief.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i02-04",
+          "kind": "explore",
+          "text": "Choose one thing to check.\nLet your helper check the change.\nThen try power.\nUnplug before trying another fix.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i02-05",
+          "kind": "reveal",
+          "text": "One small change\ncan give us a useful clue.\nChanging everything at once\nhides which part helped.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i02-06",
+          "kind": "reflect",
+          "text": "Tell your repair story.\nWhat did you check?\nWhat happened?\nWhat would you try next?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 1,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i02",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i03",
+      "title": "Copy the move",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 45,
+      "prerequisites": [
+        "m01",
+        "m02"
+      ],
+      "pages": [
+        {
+          "page_id": "i03-01",
+          "kind": "hook",
+          "text": "This machine makes\na lovely little move.\nCould yours do that\nwith different cardboard parts?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i03-02",
+          "kind": "predict",
+          "text": "If one link gets longer,\nwill the end\nmove the same way?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i03-03",
+          "kind": "build",
+          "text": "Watch the cardboard model move.\nDraw what it does.\nYour helper fits your paper pins\nand checks that the parts turn freely.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use M01/M02 readiness and precut parts. No powered reverse engineering, sharp tools or high-force mechanism.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i03-04",
+          "kind": "explore",
+          "text": "Try the same small handle move\nthree times.\nStop before moving one paper strip\nor its turning point.\nTry again. What changed?",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i03-05",
+          "kind": "reveal",
+          "text": "Different parts\ncan make similar moves.\nBut one version may wobble\nmore than the other.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i03-06",
+          "kind": "reflect",
+          "text": "Choose one thing\nyou want to make better.\nTry one change.\nDid it help?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 2,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i03",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i04",
+      "title": "Two handles",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 50,
+      "prerequisites": [
+        "i01"
+      ],
+      "pages": [
+        {
+          "page_id": "i04-01",
+          "kind": "hook",
+          "text": "One paper flap.\nTwo handles.\nWhich would you\nlike to use?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i04-02",
+          "kind": "predict",
+          "text": "Would the same handle\nfeel easiest\nto everyone?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i04-03",
+          "kind": "build",
+          "text": "Imagine someone using your flap.\nWould they pull it or push it?\nMake two paper handles\nwith your helper.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. No medical claims or disability simulation. No names or health histories. Use voluntary comfortable partner testing and only preapproved paper mechanisms.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i04-04",
+          "kind": "explore",
+          "text": "Ask a partner to try them\nin a comfortable way.\nListen to what they say.\nChange one handle and try again.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i04-05",
+          "kind": "reveal",
+          "text": "A bigger grip\nmight help one person.\nAnother person\nmight choose a different shape.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i04-06",
+          "kind": "reflect",
+          "text": "Show both versions.\nWhat did your partner\nhelp you notice?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 3,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i04",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i05",
+      "title": "One more try",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 60,
+      "prerequisites": [
+        "i02"
+      ],
+      "pages": [
+        {
+          "page_id": "i05-01",
+          "kind": "hook",
+          "text": "This paper flag\nkeeps falling over.\nWhat could help\nit stand?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i05-02",
+          "kind": "predict",
+          "text": "Which part should we test first:\nthe wobbly base\nor the decoration?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i05-03",
+          "kind": "build",
+          "text": "Choose your six craft materials\nwith your helper.\nSay what your model must do.\nMake a quick first version.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. Use the default no-electronics route for this complete manuscript. Additional electrical versions need their own source, prerequisites and review. Adult preps holes and fasteners.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i05-04",
+          "kind": "explore",
+          "text": "Try it.\nWhat falls, bends or slips?\nChange just one part.\nTry the same test\nwith your second version.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i05-05",
+          "kind": "reveal",
+          "text": "The first try\ntold us what needed work.\nNow we have\nsomething useful to change.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i05-06",
+          "kind": "reflect",
+          "text": "Show both versions.\nWhich change helped?\nWhat would you try\nwith one less material?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 4,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i05",
+      "review_status": "Adult setup and physical review still required"
+    },
+    {
+      "id": "i06",
+      "title": "I made that!",
+      "track": "inventor-league",
+      "book_track_title": "I made that!",
+      "minutes": 50,
+      "prerequisites": [
+        "i05"
+      ],
+      "pages": [
+        {
+          "page_id": "i06-01",
+          "kind": "hook",
+          "text": "Look what you made!\nA little house.\nA wiggly creature.\nSomething that began as an idea.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "opening",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i06-02",
+          "kind": "predict",
+          "text": "What could you show\nto help someone understand\nhow it works?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "question",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i06-03",
+          "kind": "build",
+          "text": "Ask your helper to check your model.\nYou can show a drawing instead.\nFind your notes.\nKeep names and private details off the display.",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "action",
+          "helper_note": "Use the full helper guide for this lesson. Do not improvise wiring from an illustration. No publishing requirement. Adult checks the demonstration and any media. Keep feedback respectful, voluntary and local.",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i06-04",
+          "kind": "explore",
+          "text": "Tell someone:\n“This was my first idea.\nThis is what happened.\nThis is what I changed.”",
+          "image": {
+            "path": "assets/i-action-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "try",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i06-05",
+          "kind": "reveal",
+          "text": "A story about a mistake\ncan help explain\na better idea.",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "discovery",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        },
+        {
+          "page_id": "i06-06",
+          "kind": "reflect",
+          "text": "Ask your listener\nwhat they noticed.\nWhat would you like\nto make next?",
+          "image": {
+            "path": "assets/i-story-sheet.jpg",
+            "cell": 5,
+            "columns": 3,
+            "rows": 2
+          },
+          "layout": "ending",
+          "helper_note": "",
+          "keep_text_verbatim": true
+        }
+      ],
+      "technical_guide_id": "i06",
+      "review_status": "Adult setup and physical review still required"
+    }
+  ]
+}

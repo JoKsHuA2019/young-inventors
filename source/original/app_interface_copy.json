@@ -1,0 +1,57 @@
+{
+  "child": {
+    "navigation": {
+      "home": "Pick a project",
+      "projects": "Things to make",
+      "notebook": "My notebook",
+      "helper": "For grown-ups"
+    },
+    "home": {
+      "heading": "What shall we make?",
+      "intro": "Pick a picture. Read with your helper. Stop to try things along the way.",
+      "start": "Let’s make it",
+      "back": "Back",
+      "next": "Next",
+      "pause": "Take a break"
+    },
+    "notebook": {
+      "heading": "My notebook",
+      "prompts": [
+        "I think…",
+        "I saw…",
+        "I changed…",
+        "Next time…"
+      ],
+      "empty": "Draw or write your first idea.",
+      "save": "Save my notes",
+      "print": "Print my notes",
+      "clear": "Clear my notes",
+      "clear_confirm": "Erase the notes saved here?",
+      "paper": "You can use paper too."
+    },
+    "lesson": {
+      "guess": "What is your guess?",
+      "unsure": "Let’s find out.",
+      "try": "Let’s try it",
+      "notice": "What happened?",
+      "another_try": "Try again",
+      "finish": "I’m done for now",
+      "after": "What would you like to make next?"
+    },
+    "errors": {
+      "missing_lesson": "That project could not open. Pick another picture.",
+      "missing_asset": "The picture did not load. Ask your helper for help.",
+      "save_failed": "Your notes did not save. Ask your helper to copy or print them."
+    }
+  },
+  "helper": {
+    "heading": "For grown-ups",
+    "setup": "Use the matching lesson in Young_Inventors_Helper_Guide.pdf for exact parts, wiring, code and checks. Illustrations show ideas, not wiring.",
+    "status": "All physical trials, Arduino-core compilation and child pilots remain pending. Review the actual kit before a shared activity.",
+    "age": "The words are intended for shared reading with younger children, roughly 6–9. Hardware tasks still need adult preparation and individual readiness checks.",
+    "time": "Full activities typically take 25–60 minutes; a read-aloud can stop earlier.",
+    "storage": "If notes are saved in this browser, other people using the same browser may see them. Clearing browser data can remove them.",
+    "privacy": "No name, photo, account or public post is needed. Public uploads are outside this curriculum handoff.",
+    "independent_build": "The child pages do not contain complete build instructions. Use the separate technical helper guide throughout."
+  }
+}
