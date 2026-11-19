@@ -99,6 +99,7 @@ export type WorkshopState = {
   version: 1;
   progress: Record<string, Progress>;
   inventory: Record<string, number>;
+  creative?: import("./creative").CreativeState;
 };
 export const steps = [
   "The story",

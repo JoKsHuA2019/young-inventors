@@ -4,9 +4,12 @@ import { useState } from "react";
 import { BookOpen, Download, Printer, Trash2, ArrowRight } from "lucide-react";
 import { useWorkshop } from "./WorkshopProvider";
 import { catalog, projectHref } from "@/lib/catalog";
+import { NotebookExtras } from "./CreativeWorkshop";
 export default function Notebook() {
-  const { state, ready, update, remove, clear, exportNotes } = useWorkshop();
+  const { state, creative, ready, update, remove, clear, exportNotes } =
+    useWorkshop();
   const [confirm, setConfirm] = useState("");
+  const [reset, setReset] = useState(0);
   const entries = Object.entries(state.progress).filter(([id]) =>
     catalog.some((l) => l.id === id),
   );
@@ -30,7 +33,10 @@ export default function Notebook() {
         <button className="button secondary" onClick={() => window.print()}>
           <Printer size={17} /> Print
         </button>
-        {entries.length > 0 && (
+        {(entries.length > 0 ||
+          creative.attempts.length > 0 ||
+          creative.questions.length > 0 ||
+          Object.keys(creative.drafts).length > 0) && (
           <button className="text-button" onClick={() => setConfirm("all")}>
             <Trash2 size={16} /> Clear notebook
           </button>
@@ -45,14 +51,16 @@ export default function Notebook() {
         <div className="confirm-box" role="alert">
           <p>
             {confirm === "all"
-              ? "Erase every note saved in this notebook? Your materials list will stay."
+              ? "Erase the notes, drawings, saved tries, questions, and keepsakes in this notebook? Your materials list will stay. Save a complete workshop copy first if you want to keep these ideas."
               : "Erase this project’s notes and progress?"}
           </p>
           <button
             className="button"
             onClick={() => {
-              if (confirm === "all") clear();
-              else remove(confirm);
+              if (confirm === "all") {
+                clear();
+                setReset((n) => n + 1);
+              } else remove(confirm);
               setConfirm("");
             }}
           >
@@ -63,6 +71,13 @@ export default function Notebook() {
           </button>
         </div>
       )}
+      <nav className="notebook-jumps" aria-label="Notebook sections">
+        <a href="#invention-shelf">My invention shelf</a>
+        <a href="#wonder-pocket">My wonder pocket</a>
+        <a href="#lesson-notes">My lesson notes</a>
+      </nav>
+      <NotebookExtras key={reset} />
+      <h2 id="lesson-notes">My lesson notes</h2>
       {!ready ? (
         <p>Opening your notebook…</p>
       ) : !entries.length ? (

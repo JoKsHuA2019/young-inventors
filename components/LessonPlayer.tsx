@@ -18,6 +18,17 @@ import { projectHref, trackFor, byId } from "@/lib/catalog";
 import { useWorkshop } from "./WorkshopProvider";
 import { StoryImage } from "./Shared";
 import HelperGuide from "./HelperGuide";
+import { pilots } from "@/lib/pilots";
+import { CreativeNotebook } from "./CreativeWorkshop";
+import {
+  ParentQuickStart,
+  BuildCompanion,
+  ObservationChoices,
+  InventionPrompts,
+  PauseCard,
+  AdventurePrintButton,
+} from "./FamilyMaking";
+const InvestigationScene = dynamic(() => import("./InvestigationScene"));
 const Preview = dynamic(() => import("./Preview"), {
   loading: () => <p>Setting out the little model…</p>,
 });
@@ -141,6 +152,7 @@ export default function LessonPlayer({
       )}
       {view === "helper" ? (
         <>
+          <ParentQuickStart lesson={lesson} />
           <HelperGuide lesson={lesson} code={code} />
           <button className="button" onClick={() => setView("child")}>
             Back to our project <ArrowRight size={17} />
@@ -238,6 +250,9 @@ export default function LessonPlayer({
                   real thing. What changes when you try the controls?
                 </p>
                 <Preview key={lesson.id} kind={lesson.preview} />
+                {pilots[lesson.id] && (
+                  <InvestigationScene lessonId={lesson.id} />
+                )}
               </>
             )}
             {p.step === 3 && (
@@ -248,6 +263,7 @@ export default function LessonPlayer({
                   className="lesson-art"
                 />
                 <p className="story-prose">{lesson.buildText}</p>
+                <BuildCompanion lesson={lesson} />
                 <p>
                   Your helper has the exact preparation and build steps. You can
                   choose the test and help trace how the parts work together.
@@ -325,6 +341,7 @@ export default function LessonPlayer({
                     <label className="field">
                       What happened in your real experiment?
                       <textarea
+                        data-real-observation
                         value={p.observation}
                         onChange={(e) =>
                           change({ observation: e.target.value })
@@ -332,6 +349,7 @@ export default function LessonPlayer({
                         placeholder="Write what you actually saw. A surprising result is useful too."
                       />
                     </label>
+                    <ObservationChoices lesson={lesson} p={p} change={change} />
                     <fieldset className="outcome-choice">
                       <legend>How did this try go?</legend>
                       {[
@@ -436,6 +454,10 @@ export default function LessonPlayer({
             {p.step === 7 && (
               <>
                 <p className="story-prose">{lesson.invitation}</p>
+                <InventionPrompts
+                  lesson={lesson}
+                  onChoose={(text) => change({ change: text })}
+                />
                 <fieldset className="remix-choices">
                   <legend>Or choose another small investigation</legend>
                   {lesson.remix.map((r) => (
@@ -535,6 +557,7 @@ export default function LessonPlayer({
                     What shall we investigate next? <ArrowRight size={18} />
                   </Link>
                 )}
+                <CreativeNotebook lessonId={lesson.id} />
               </>
             )}
             <div className="player-bottom">
@@ -558,10 +581,12 @@ export default function LessonPlayer({
                 </Link>
               )}
             </div>
+            <PauseCard lesson={lesson} />
           </section>
         </div>
       )}
       <div className="lesson-tools">
+        {pilots[lesson.id] && <AdventurePrintButton />}
         <button className="text-button" onClick={() => window.print()}>
           <Printer size={17} /> Print the project & worksheet
         </button>
@@ -601,6 +626,7 @@ export default function LessonPlayer({
           {p.change} {p.reflection}
         </p>
         <div className="write-lines" />
+        {pilots[lesson.id] && <BuildCompanion lesson={lesson} print />}
         <HelperGuide lesson={lesson} code={code} printMode />
       </section>
     </main>

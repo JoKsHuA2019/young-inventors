@@ -319,6 +319,7 @@ export function readInventoryBackup(raw: string): Record<string, number> {
     value.version !== 1 ||
     !(
       value.format === "young-inventors-making-box" ||
+      value.format === "young-inventors-workshop" ||
       (!value.format && value.progress && typeof value.progress === "object")
     ) ||
     !value.inventory ||

@@ -93,5 +93,41 @@ test("GitHub Pages preserves artwork, routes, downloads, models and notes", asyn
   await expect(page.getByLabel("Next time…")).toHaveValue(
     "Try a different light rhythm.",
   );
+  const pilot = catalog.find((l) => l.id === "c01")!;
+  await page.goto(`${prefix}/projects/${pilot.slug}/`);
+  await page
+    .locator(".step-nav")
+    .getByRole("button", { name: "Make it", exact: true })
+    .click();
+  await page.locator(".build-companion>summary").click();
+  const picture = page.locator(".build-companion .build-picture");
+  await expect(picture).toHaveAttribute(
+    "src",
+    new RegExp(`^${prefix}/assets/`),
+  );
+  await expect
+    .poll(() => picture.evaluate((img: HTMLImageElement) => img.naturalWidth))
+    .toBeGreaterThan(0);
+  await page
+    .locator(".step-nav")
+    .getByRole("button", { name: "Your notebook", exact: true })
+    .click();
+  await expect(page.locator(".drawing-surface")).toHaveAttribute(
+    "aria-disabled",
+    "false",
+  );
+  await page.locator(".drawing-pad details>summary").click();
+  await page.getByRole("button", { name: "Add a circle", exact: true }).click();
+  await expect(page.locator(".drawing-pad .creative-status")).toContainText(
+    "Drawing saved",
+  );
+  await page.getByRole("button", { name: "Save this try to my shelf" }).click();
+  await page
+    .getByRole("link", { name: "Visit my invention shelf", exact: true })
+    .click();
+  await expect(page).toHaveURL(
+    new RegExp(`${prefix}/notebook/#invention-shelf$`),
+  );
+  await expect(page.locator(".shelf-card .drawing-paper")).toBeVisible();
   expect(errors).toEqual([]);
 });

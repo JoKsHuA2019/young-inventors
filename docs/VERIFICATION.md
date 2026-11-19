@@ -1,6 +1,6 @@
 # Implementation verification
 
-Checked on 17 November 2026 (America/Los_Angeles). These results concern the website and preserved source logic. They do not constitute approval of a physical workshop.
+Updated on 18 November 2026 (America/Los_Angeles). These results concern the website and preserved source logic. They do not constitute approval of a physical workshop.
 
 ## Software checks
 
@@ -11,8 +11,10 @@ Checked on 17 November 2026 (America/Los_Angeles). These results concern the web
 | TypeScript and ESLint | TypeScript passed in the current production builds. ESLint passed during the initial implementation; it was not rerun for the making-box update. |
 | Production export | Passed; all 45 generated pages are static. |
 | GitHub Pages path | Passed against a separate `/young-inventors` export: all 30 project routes, public artwork and fonts, original downloads and code samples, client navigation, interactive model, note reload, making-box counts, and suggested-project images. |
-| Unit tests | 11 passed: combined filters, quantities/optional materials, progress preservation, damaged storage handling, sensor edge cases, linkage geometry, exact material IDs, relevant project suggestions, kit merging, and backup validation. |
-| Chromium browser tests | 56 passed, including every lesson's model, helper guide, seven build steps, hint ladder, note persistence, and print view; header dropdown behavior; and the making box. The GitHub project-path case is skipped for root exports and run separately against its own build. |
+| Unit tests | 15 passed: domain behavior, inventory matching/copies, legacy notebook preservation, complete workshop drawing references, invalid drawing rejection, and alignment of the seven pilot build cards with source review states. |
+| Chromium browser tests | 65 passed, including all existing lesson, navigation, and making-box checks plus nine creative-workshop scenarios. The GitHub project-path case is skipped for root exports and run separately against its own build. |
+| Creative workshop | Passed: all three investigation models and persistence; separation of screen clues from physical evidence; pointer drawing; shape controls and undo/redo; immutable first/next snapshots; question and companion persistence; complete backup transfer to a separate browser context; invalid/cancelled/failed-drawing import preservation; blocked drawing storage with downloadable recovery; gathering without inventory mutation; observation choices; and pause clearing the session-preparation check. |
+| Adventure packs | All three pilot packs expose seven illustrated cards, the gathering list and parent guidance; image resources load; the full technical guide remains available through the original print route. Print-media visibility and mode cleanup are covered by browser checks. |
 | Making box | Passed: search and group filtering, keyboard counters, persistence after reload, selected kit pieces only, repeated kits without double counting, file download and import into a separate browser context, restore preview/cancel/combine/replace, notebook preservation, invalid-copy rejection, blocked-storage export, and sharing changes between open tabs. |
 | Investigation journey | Passed: prediction → preparation check → physical observation → notebook → export → cancel deletion → confirm deletion. |
 | Failure and update behavior | Passed: unavailable local storage, missing illustrations before hydration, and a changed lesson revision that keeps notes while explaining the restarted setup. |
@@ -22,7 +24,7 @@ Checked on 17 November 2026 (America/Los_Angeles). These results concern the web
 | Original resources | All original bookshelf links respond successfully. The app labels these downloads as the original edition. |
 | Sketch logic | All 16 original host-mock checks pass using the portable wrapper described below. |
 
-The browser suites are in `tests/browser/`; meaningful domain checks are in `tests/core.test.ts` and `tests/materials.test.ts`. Screenshots and test traces are local verification output and are excluded from the source/deployment archive.
+The browser suites are in `tests/browser/`; meaningful domain checks are in `tests/core.test.ts`, `tests/materials.test.ts`, and `tests/creative.test.ts`. Creative scenes, drawing tools and saved shelves were checked at 360, 768 and 1440 px, with phone/desktop screenshots inspected and representative expanded states checked with axe. Screenshots and test traces are local verification output and are excluded from the source/deployment archive.
 
 ## Sketch-check scope
 

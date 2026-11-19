@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./creative.css";
 import WorkshopProvider from "@/components/WorkshopProvider";
 import { Nav, Footer } from "@/components/Shared";
 export const metadata: Metadata = {

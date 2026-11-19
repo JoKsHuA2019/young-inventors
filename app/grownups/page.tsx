@@ -25,6 +25,22 @@ export default function Page() {
       </div>
       <div className="resource-grid">
         <article className="resource-card">
+          <h3>A little more room to explore</h3>
+          <p>
+            The tent light, Fox’s cardboard jaw, and the mystery box now have
+            extra screen investigations, illustrated making cards, and parent
+            quick-start notes. Each offers an adventure pack to print.
+          </p>
+          <Link href={projectHref("c01")}>Visit Mouse’s tent light</Link>
+          <Link href={projectHref("m01")}>Visit Fox’s cardboard jaw</Link>
+          <Link href={projectHref("i01")}>Visit the mystery box</Link>
+          <p>
+            Every project also has a drawing pad, an invention shelf, and a
+            pocket for questions. A complete workshop copy carries this work
+            between browsers or devices.
+          </p>
+        </article>
+        <article className="resource-card">
           <h3>Prepare a project</h3>
           <p>
             Every project has a grown-up view with exact quantities,

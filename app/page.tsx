@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { ProjectCard, ContinueProject } from "@/components/Shared";
 import { byId, tracks } from "@/lib/catalog";
+import { CompanionPicker, InventionShelf } from "@/components/CreativeWorkshop";
 export default function Home() {
   return (
     <main id="main">
@@ -73,12 +74,17 @@ export default function Home() {
       </div>
       <div className="page-width">
         <ContinueProject />
+        <CompanionPicker />
+        <InventionShelf compact />
         <section className="featured-section">
           <div className="section-heading">
             <div>
               <span className="eyebrow">PULL UP A CHAIR</span>
               <h2>Where shall we begin?</h2>
-              <p>Three little adventures. Plenty of room for your own ideas.</p>
+              <p>
+                Three little adventures with new mysteries to try, pictures to
+                draw, and ideas to make your own.
+              </p>
             </div>
             <Link href="/explore/" className="text-link">
               All things to make <ArrowUpRight size={18} />

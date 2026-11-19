@@ -1,4 +1,5 @@
 import type { Progress, WorkshopState } from "./types";
+import { cleanCreative } from "./creative";
 export const STORAGE_KEY = "young-inventors.workshop.v1";
 export const emptyState: WorkshopState = {
   version: 1,
@@ -23,11 +24,14 @@ export function parseState(raw: string | null): WorkshopState {
   if (!raw) return { ...emptyState };
   const x = JSON.parse(raw);
   if (
+    !x ||
     x.version !== 1 ||
     !x.progress ||
     !x.inventory ||
     typeof x.progress !== "object" ||
-    typeof x.inventory !== "object"
+    typeof x.inventory !== "object" ||
+    Array.isArray(x.inventory) ||
+    Array.isArray(x.progress)
   )
     throw Error("Unknown notebook format");
   const inventory: Record<string, number> = {};
@@ -62,7 +66,18 @@ export function parseState(raw: string | null): WorkshopState {
     clean.finished = p.finished === true;
     progress[id] = clean;
   }
-  return { version: 1, inventory, progress };
+  const creative = cleanCreative(
+    x.creative,
+    (value) =>
+      parseState(
+        JSON.stringify({
+          version: 1,
+          inventory: {},
+          progress: { c01: value || {} },
+        }),
+      ).progress.c01 || freshProgress(),
+  );
+  return { version: 1, inventory, progress, creative };
 }
 export type ProgressAction =
   | { type: "update"; patch: Partial<Progress> }
